@@ -112,6 +112,6 @@ public class FishCatchedState : IMinigameState
 
     public void SetupCaching()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

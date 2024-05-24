@@ -64,6 +64,6 @@ public class TimeForHitchState : IMinigameState
 
     public void SetupCaching()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

@@ -76,6 +76,6 @@ public class WaitingForFishState : IMinigameState
 
     public void SetupCaching()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

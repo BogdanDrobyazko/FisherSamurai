@@ -49,6 +49,6 @@ public class FishPeckingState : IMinigameState
 
     public void SetupCaching()
     {
-        throw new System.NotImplementedException();
+        
     }
 }

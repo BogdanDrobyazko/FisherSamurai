@@ -43,6 +43,6 @@ public class FishBrokeState : IMinigameState
 
     public void SetupCaching()
     {
-        throw new NotImplementedException();
+        
     }
 }
