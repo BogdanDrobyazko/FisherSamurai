@@ -123,90 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &3993822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3993824}
-  - component: {fileID: 3993823}
-  m_Layer: 0
-  m_Name: Sky
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &3993823
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3993822}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 288471864ae96b749b475a947abcf78e, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 64421d3cefd8f1b40a51817b1fd762b6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 89.84, y: 26.2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &3993824
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3993822}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1210294836}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19121573
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,7 +4052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7829,8 +7745,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventBus: {fileID: 1085512453}
   _currentGameData:
-    moneyBalance: 0
     isGameDataExist: 1
+    experiencePoints: 0
+    moneyBalance: 0
     currentHookIndex: 0
     currentRodIndex: 0
     currentBaitIndex: 4
@@ -7840,6 +7757,7 @@ MonoBehaviour:
       title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430 "
       description: "\u0410\u0443\u0447!"
       rewardMoney: 15
+      rewardExp: 0
       level: 1
       catchStartHour: 0
       catchEndHour: 0
@@ -7850,6 +7768,7 @@ MonoBehaviour:
       title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
       description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
       rewardMoney: 20
+      rewardExp: 0
       level: 1
       catchStartHour: 2
       catchEndHour: 2
@@ -7860,6 +7779,7 @@ MonoBehaviour:
       title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437 "
       description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
       rewardMoney: 25
+      rewardExp: 0
       level: 1
       catchStartHour: 3
       catchEndHour: 3
@@ -7870,6 +7790,7 @@ MonoBehaviour:
       title: "\u0427\u0443\u043C\u0430\u0437\u0443\u0441"
       description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
       rewardMoney: 30
+      rewardExp: 0
       level: 1
       catchStartHour: 1
       catchEndHour: 1
@@ -7881,6 +7802,7 @@ MonoBehaviour:
       description: "\u0427\u0442\u043E \u0432 \u043B\u043E\u0431, \u0447\u0442\u043E
         \u043F\u043E \u043B\u0431\u0443\u2026"
       rewardMoney: 35
+      rewardExp: 0
       level: 2
       catchStartHour: 17
       catchEndHour: 17
@@ -7892,6 +7814,7 @@ MonoBehaviour:
       description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
         \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
       rewardMoney: 40
+      rewardExp: 0
       level: 2
       catchStartHour: 11
       catchEndHour: 11
@@ -7903,6 +7826,7 @@ MonoBehaviour:
       description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
         \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
       rewardMoney: 45
+      rewardExp: 0
       level: 2
       catchStartHour: 15
       catchEndHour: 15
@@ -7913,6 +7837,7 @@ MonoBehaviour:
       title: "\u0421\u0438\u043D\u0435\u0445\u0432\u043E\u0441\u0442 "
       description: "\u042B\u044B\u043A\u2026"
       rewardMoney: 50
+      rewardExp: 0
       level: 2
       catchStartHour: 12
       catchEndHour: 12
@@ -7924,6 +7849,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u043F\u0440\u0438\u043D\u044F\u043B \u0441\u0435\u0431\u044F,
         \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
       rewardMoney: 50
+      rewardExp: 0
       level: 3
       catchStartHour: 20
       catchEndHour: 20
@@ -7934,6 +7860,7 @@ MonoBehaviour:
       title: "\u042F\u0433\u043E\u0440\u044C "
       description: "\u041E\u043F\u044F\u0442\u044C \u043F\u0440\u0438\u0446\u0435\u043F\u0438\u043B\u0441\u044F"
       rewardMoney: 60
+      rewardExp: 0
       level: 3
       catchStartHour: 10
       catchEndHour: 10
@@ -7944,6 +7871,7 @@ MonoBehaviour:
       title: "\u0426\u0432\u0435\u0442\u0438\u043A "
       description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
       rewardMoney: 60
+      rewardExp: 0
       level: 3
       catchStartHour: 7
       catchEndHour: 7
@@ -7954,6 +7882,7 @@ MonoBehaviour:
       title: "\u041B\u0443\u043D\u043A\u0430 "
       description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
       rewardMoney: 65
+      rewardExp: 0
       level: 3
       catchStartHour: 8
       catchEndHour: 8
@@ -7965,6 +7894,7 @@ MonoBehaviour:
       description: "\u0414\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u043D\u0435 \u0440\u0430\u0441\u043A\u043E\u043B\u0435\u0442\u0441\u044F"
       rewardMoney: 65
+      rewardExp: 0
       level: 4
       catchStartHour: 18
       catchEndHour: 18
@@ -7975,6 +7905,7 @@ MonoBehaviour:
       title: "\u041C\u0435\u0433\u0430\u043B\u0430\u0434\u043E\u043D\u044C "
       description: "\u0414\u0430\u0439 \u043F\u044F\u0442\u044C!"
       rewardMoney: 75
+      rewardExp: 0
       level: 4
       catchStartHour: 5
       catchEndHour: 5
@@ -7987,6 +7918,7 @@ MonoBehaviour:
         \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
         \u0442\u0435\u0431\u044F!"
       rewardMoney: 75
+      rewardExp: 0
       level: 4
       catchStartHour: 23
       catchEndHour: 23
@@ -7998,6 +7930,7 @@ MonoBehaviour:
       description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
         \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
       rewardMoney: 85
+      rewardExp: 0
       level: 4
       catchStartHour: 4
       catchEndHour: 4
@@ -8008,6 +7941,7 @@ MonoBehaviour:
       title: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u0447\u0435\u0448\u0443\u0439\u043A\u0430"
       description: "\u0421\u043A\u0430\u0437\u043E\u0447\u043D\u0430\u044F \u0448\u043A\u0443\u0440\u0430"
       rewardMoney: 90
+      rewardExp: 0
       level: 5
       catchStartHour: 22
       catchEndHour: 23
@@ -8018,6 +7952,7 @@ MonoBehaviour:
       title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442 "
       description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
       rewardMoney: 95
+      rewardExp: 0
       level: 5
       catchStartHour: 10
       catchEndHour: 11
@@ -8028,6 +7963,7 @@ MonoBehaviour:
       title: "\u0426\u0438\u043A\u043B\u043E\u043F\u0438\u044F"
       description: "\u041F\u043E\u0434\u0432\u043E\u0434\u043D\u0430\u044F \u043F\u0438\u0440\u0430\u0442\u043A\u0430"
       rewardMoney: 100
+      rewardExp: 0
       level: 5
       catchStartHour: 0
       catchEndHour: 5
@@ -8040,6 +7976,7 @@ MonoBehaviour:
         \u0437\u0430\u0447\u0435\u043C \u0435\u043C\u0443 \u0441\u0442\u043E\u043B\u044C\u043A\u043E
         \u043B\u0430\u043F"
       rewardMoney: 100
+      rewardExp: 0
       level: 5
       catchStartHour: 0
       catchEndHour: 1
@@ -8051,6 +7988,7 @@ MonoBehaviour:
       description: "-\u0414\u0430, \u044F \u0433\u043E\u0440\u044E. \u0422\u0435\u0431\u0435
         \u043A\u0430\u043A\u043E\u0435 \u0434\u0435\u043B\u043E?"
       rewardMoney: 100
+      rewardExp: 0
       level: 6
       catchStartHour: 12
       catchEndHour: 14
@@ -8062,6 +8000,7 @@ MonoBehaviour:
       description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
         \u0432\u0438\u0434\u0430"
       rewardMoney: 100
+      rewardExp: 0
       level: 6
       catchStartHour: 6
       catchEndHour: 6
@@ -8073,6 +8012,7 @@ MonoBehaviour:
       description: "\u0417\u0430\u0447\u0435\u043C \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
         \u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u043D\u0435\u043F\u043B\u043E\u0445\u043E"
       rewardMoney: 110
+      rewardExp: 0
       level: 6
       catchStartHour: 12
       catchEndHour: 13
@@ -8084,6 +8024,7 @@ MonoBehaviour:
       description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
       rewardMoney: 110
+      rewardExp: 0
       level: 6
       catchStartHour: 18
       catchEndHour: 19
@@ -8096,6 +8037,7 @@ MonoBehaviour:
         \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043B\u044E\u0431\u0432\u0438
         \u043C\u0430\u0442\u0435\u0440\u0438"
       rewardMoney: 110
+      rewardExp: 0
       level: 7
       catchStartHour: 13
       catchEndHour: 13
@@ -8106,6 +8048,7 @@ MonoBehaviour:
       title: "\u0418\u0441\u0443\u0441\u0438\u0443\u0441"
       description: "\u0425\u043E\u0434\u0438\u0442 \u043F\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0443"
       rewardMoney: 110
+      rewardExp: 0
       level: 7
       catchStartHour: 20
       catchEndHour: 21
@@ -8117,6 +8060,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
         \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
       rewardMoney: 125
+      rewardExp: 0
       level: 7
       catchStartHour: 14
       catchEndHour: 14
@@ -8127,6 +8071,7 @@ MonoBehaviour:
       title: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
       description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
       rewardMoney: 125
+      rewardExp: 0
       level: 7
       catchStartHour: 4
       catchEndHour: 5
@@ -8137,6 +8082,7 @@ MonoBehaviour:
       title: "\u0414\u0443\u0440\u043C\u0430\u043D\u0431\u0430\u043B\u0430"
       description: "\u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444, \u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444"
       rewardMoney: 125
+      rewardExp: 0
       level: 8
       catchStartHour: 9
       catchEndHour: 9
@@ -8147,6 +8093,7 @@ MonoBehaviour:
       title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u043A\u0442\u043E\u0440"
       description: "\u0412\u044B\u043B\u0435\u0447\u0438\u0442 \u0438 \u0438\u0437\u0443\u0432\u0435\u0447\u0438\u0442"
       rewardMoney: 125
+      rewardExp: 0
       level: 8
       catchStartHour: 21
       catchEndHour: 21
@@ -8158,6 +8105,7 @@ MonoBehaviour:
       description: "\u041D\u0443 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C
         \u041C\u044F\u0443 "
       rewardMoney: 150
+      rewardExp: 0
       level: 8
       catchStartHour: 6
       catchEndHour: 8
@@ -8168,6 +8116,7 @@ MonoBehaviour:
       title: "\u0410\u0431\u043E\u043C\u0431\u0430"
       description: "\u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u2026"
       rewardMoney: 150
+      rewardExp: 0
       level: 8
       catchStartHour: 18
       catchEndHour: 20
@@ -8179,6 +8128,7 @@ MonoBehaviour:
       description: "\u0411\u0443\u043B\u044C\u043A. \u0414\u0436\u0435\u0439\u043C\u0441
         \u0411\u0443\u043B\u044C\u043A."
       rewardMoney: 150
+      rewardExp: 0
       level: 9
       catchStartHour: 16
       catchEndHour: 17
@@ -8191,6 +8141,7 @@ MonoBehaviour:
         \u043D\u043E \u0434\u0435\u043B\u0430\u0435\u0448\u044C \u044D\u0442\u043E
         \u0431\u0435\u0437 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F\u2026"
       rewardMoney: 150
+      rewardExp: 0
       level: 9
       catchStartHour: 0
       catchEndHour: 2
@@ -8201,6 +8152,7 @@ MonoBehaviour:
       title: "\u0416\u0435\u043C\u0447\u0443\u0436\u0438\u043D\u043A\u0430"
       description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
       rewardMoney: 200
+      rewardExp: 0
       level: 9
       catchStartHour: 9
       catchEndHour: 11
@@ -8212,6 +8164,7 @@ MonoBehaviour:
       description: "\u0418 \u043A\u0430\u043A \u0435\u0451 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
         ?"
       rewardMoney: 200
+      rewardExp: 0
       level: 9
       catchStartHour: 15
       catchEndHour: 17
@@ -8223,6 +8176,7 @@ MonoBehaviour:
       description: "\u0421\u0432\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0447\u0443\u0436\u0438\u0445,
         \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
       rewardMoney: 250
+      rewardExp: 0
       level: 10
       catchStartHour: 16
       catchEndHour: 16
@@ -8234,6 +8188,7 @@ MonoBehaviour:
       description: "\u0425\u043E\u043B\u043E\u0434\u043D\u0430\u044F \u0438 \u0433\u0440\u0443\u0441\u0442\u043D\u0430\u044F
         \u0440\u044B\u0431\u0430"
       rewardMoney: 250
+      rewardExp: 0
       level: 10
       catchStartHour: 22
       catchEndHour: 22
@@ -8245,6 +8200,7 @@ MonoBehaviour:
       description: "\u041D\u0435\u0434\u043E\u043B\u044E\u0431\u043B\u0438\u0432\u0430\u0435\u0442
         \u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0442\u0440\u043E\u0441\u043E\u0432..."
       rewardMoney: 250
+      rewardExp: 0
       level: 10
       catchStartHour: 3
       catchEndHour: 5
@@ -8256,6 +8212,7 @@ MonoBehaviour:
       description: "\u0414\u043E\u0441\u0442\u0430\u043B \u0432\u0441\u0435\u0445
         \u043A\u0440\u0430\u0441\u043D\u044B\u0445 \u0440\u044B\u0431"
       rewardMoney: 350
+      rewardExp: 0
       level: 10
       catchStartHour: 2
       catchEndHour: 3
@@ -8268,6 +8225,7 @@ MonoBehaviour:
         \u0442\u0430\u043A\u043E\u0435, \u043F\u043B\u044B\u0432\u0435\u0442\u0435
         \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
       rewardMoney: 350
+      rewardExp: 0
       level: 11
       catchStartHour: 19
       catchEndHour: 19
@@ -8279,6 +8237,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0435\u0433\u043E
         \u0432 \u0441\u0435\u0439\u0444\u0435"
       rewardMoney: 350
+      rewardExp: 0
       level: 11
       catchStartHour: 14
       catchEndHour: 15
@@ -8290,6 +8249,7 @@ MonoBehaviour:
       description: "\u041B\u044E\u0431\u0438\u0442 \u043C\u043E\u0440\u0441\u043A\u0438\u0435
         \u0431\u0430\u043D\u0430\u043D\u044B"
       rewardMoney: 500
+      rewardExp: 0
       level: 11
       catchStartHour: 6
       catchEndHour: 7
@@ -8300,6 +8260,7 @@ MonoBehaviour:
       title: "\u0422\u0438\u0433\u0440\u043E\u043D"
       description: "\u0423\u043F\u043B\u044B\u043B \u0438\u0437 \u0446\u0438\u0440\u043A\u0430\u2026"
       rewardMoney: 500
+      rewardExp: 0
       level: 11
       catchStartHour: 8
       catchEndHour: 9
@@ -8310,6 +8271,7 @@ MonoBehaviour:
       title: "\u041D\u0435\u0432\u0435\u0434\u0438\u043C\u0431\u0440\u0438\u044F"
       description: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0432\u044B\u0440\u043E\u043D\u0438\u0442\u044C"
       rewardMoney: 1000
+      rewardExp: 0
       level: 12
       catchStartHour: 21
       catchEndHour: 23
@@ -8321,6 +8283,7 @@ MonoBehaviour:
       description: "\u041D\u0438\u043A\u0430\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
         \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
       rewardMoney: 1000
+      rewardExp: 0
       level: 12
       catchStartHour: 12
       catchEndHour: 17
@@ -8333,6 +8296,7 @@ MonoBehaviour:
         \u0430 \u043F\u043E \u0441\u0443\u0442\u0438 \u0442\u043E\u0442 \u0435\u0449\u0451
         \u0437\u043C\u0435\u0439"
       rewardMoney: 1250
+      rewardExp: 0
       level: 12
       catchStartHour: 6
       catchEndHour: 11
@@ -8344,6 +8308,7 @@ MonoBehaviour:
       description: "\u041B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0435
         \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
       rewardMoney: 1500
+      rewardExp: 0
       level: 12
       catchStartHour: 18
       catchEndHour: 23
@@ -8355,6 +8320,7 @@ MonoBehaviour:
       description: "\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u044D\u0442\u043E\u0433\u043E
         \u043C\u0438\u0440\u0430"
       rewardMoney: 5000
+      rewardExp: 0
       level: 13
       catchStartHour: 0
       catchEndHour: 23
@@ -8492,8 +8458,9 @@ MonoBehaviour:
       isItemMultiplable: 1
       typeOfFishToImprovement: 0
   _baseGameData:
-    moneyBalance: 0
     isGameDataExist: 0
+    experiencePoints: 0
+    moneyBalance: 0
     currentHookIndex: 0
     currentRodIndex: 0
     currentBaitIndex: 4
@@ -8503,6 +8470,7 @@ MonoBehaviour:
       title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430 "
       description: "\u0410\u0443\u0447!"
       rewardMoney: 15
+      rewardExp: 30
       level: 1
       catchStartHour: 0
       catchEndHour: 0
@@ -8513,6 +8481,7 @@ MonoBehaviour:
       title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
       description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
       rewardMoney: 20
+      rewardExp: 30
       level: 1
       catchStartHour: 2
       catchEndHour: 2
@@ -8523,6 +8492,7 @@ MonoBehaviour:
       title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437 "
       description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
       rewardMoney: 25
+      rewardExp: 30
       level: 1
       catchStartHour: 3
       catchEndHour: 3
@@ -8533,6 +8503,7 @@ MonoBehaviour:
       title: "\u0427\u0443\u043C\u0430\u0437\u0443\u0441"
       description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
       rewardMoney: 30
+      rewardExp: 30
       level: 1
       catchStartHour: 1
       catchEndHour: 1
@@ -8544,6 +8515,7 @@ MonoBehaviour:
       description: "\u0427\u0442\u043E \u0432 \u043B\u043E\u0431, \u0447\u0442\u043E
         \u043F\u043E \u043B\u0431\u0443\u2026"
       rewardMoney: 35
+      rewardExp: 38
       level: 2
       catchStartHour: 17
       catchEndHour: 17
@@ -8555,6 +8527,7 @@ MonoBehaviour:
       description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
         \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
       rewardMoney: 40
+      rewardExp: 38
       level: 2
       catchStartHour: 11
       catchEndHour: 11
@@ -8566,6 +8539,7 @@ MonoBehaviour:
       description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
         \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
       rewardMoney: 45
+      rewardExp: 38
       level: 2
       catchStartHour: 15
       catchEndHour: 15
@@ -8576,6 +8550,7 @@ MonoBehaviour:
       title: "\u0421\u0438\u043D\u0435\u0445\u0432\u043E\u0441\u0442 "
       description: "\u042B\u044B\u043A\u2026"
       rewardMoney: 50
+      rewardExp: 38
       level: 2
       catchStartHour: 12
       catchEndHour: 12
@@ -8587,6 +8562,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u043F\u0440\u0438\u043D\u044F\u043B \u0441\u0435\u0431\u044F,
         \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
       rewardMoney: 50
+      rewardExp: 46
       level: 3
       catchStartHour: 20
       catchEndHour: 20
@@ -8597,6 +8573,7 @@ MonoBehaviour:
       title: "\u042F\u0433\u043E\u0440\u044C "
       description: "\u041E\u043F\u044F\u0442\u044C \u043F\u0440\u0438\u0446\u0435\u043F\u0438\u043B\u0441\u044F"
       rewardMoney: 60
+      rewardExp: 46
       level: 3
       catchStartHour: 10
       catchEndHour: 10
@@ -8607,6 +8584,7 @@ MonoBehaviour:
       title: "\u0426\u0432\u0435\u0442\u0438\u043A "
       description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
       rewardMoney: 60
+      rewardExp: 46
       level: 3
       catchStartHour: 7
       catchEndHour: 7
@@ -8617,6 +8595,7 @@ MonoBehaviour:
       title: "\u041B\u0443\u043D\u043A\u0430 "
       description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
       rewardMoney: 65
+      rewardExp: 46
       level: 3
       catchStartHour: 8
       catchEndHour: 8
@@ -8628,6 +8607,7 @@ MonoBehaviour:
       description: "\u0414\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u043D\u0435 \u0440\u0430\u0441\u043A\u043E\u043B\u0435\u0442\u0441\u044F"
       rewardMoney: 65
+      rewardExp: 54
       level: 4
       catchStartHour: 18
       catchEndHour: 18
@@ -8638,6 +8618,7 @@ MonoBehaviour:
       title: "\u041C\u0435\u0433\u0430\u043B\u0430\u0434\u043E\u043D\u044C "
       description: "\u0414\u0430\u0439 \u043F\u044F\u0442\u044C!"
       rewardMoney: 75
+      rewardExp: 54
       level: 4
       catchStartHour: 5
       catchEndHour: 5
@@ -8650,6 +8631,7 @@ MonoBehaviour:
         \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
         \u0442\u0435\u0431\u044F!"
       rewardMoney: 75
+      rewardExp: 54
       level: 4
       catchStartHour: 23
       catchEndHour: 23
@@ -8661,6 +8643,7 @@ MonoBehaviour:
       description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
         \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
       rewardMoney: 85
+      rewardExp: 54
       level: 4
       catchStartHour: 4
       catchEndHour: 4
@@ -8671,6 +8654,7 @@ MonoBehaviour:
       title: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u0447\u0435\u0448\u0443\u0439\u043A\u0430"
       description: "\u0421\u043A\u0430\u0437\u043E\u0447\u043D\u0430\u044F \u0448\u043A\u0443\u0440\u0430"
       rewardMoney: 90
+      rewardExp: 62
       level: 5
       catchStartHour: 22
       catchEndHour: 23
@@ -8681,6 +8665,7 @@ MonoBehaviour:
       title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442 "
       description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
       rewardMoney: 95
+      rewardExp: 62
       level: 5
       catchStartHour: 10
       catchEndHour: 11
@@ -8691,6 +8676,7 @@ MonoBehaviour:
       title: "\u0426\u0438\u043A\u043B\u043E\u043F\u0438\u044F"
       description: "\u041F\u043E\u0434\u0432\u043E\u0434\u043D\u0430\u044F \u043F\u0438\u0440\u0430\u0442\u043A\u0430"
       rewardMoney: 100
+      rewardExp: 62
       level: 5
       catchStartHour: 0
       catchEndHour: 5
@@ -8703,6 +8689,7 @@ MonoBehaviour:
         \u0437\u0430\u0447\u0435\u043C \u0435\u043C\u0443 \u0441\u0442\u043E\u043B\u044C\u043A\u043E
         \u043B\u0430\u043F"
       rewardMoney: 100
+      rewardExp: 62
       level: 5
       catchStartHour: 0
       catchEndHour: 1
@@ -8714,6 +8701,7 @@ MonoBehaviour:
       description: "-\u0414\u0430, \u044F \u0433\u043E\u0440\u044E. \u0422\u0435\u0431\u0435
         \u043A\u0430\u043A\u043E\u0435 \u0434\u0435\u043B\u043E?"
       rewardMoney: 100
+      rewardExp: 70
       level: 6
       catchStartHour: 12
       catchEndHour: 14
@@ -8725,6 +8713,7 @@ MonoBehaviour:
       description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
         \u0432\u0438\u0434\u0430"
       rewardMoney: 100
+      rewardExp: 70
       level: 6
       catchStartHour: 6
       catchEndHour: 6
@@ -8736,6 +8725,7 @@ MonoBehaviour:
       description: "\u0417\u0430\u0447\u0435\u043C \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
         \u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u043D\u0435\u043F\u043B\u043E\u0445\u043E"
       rewardMoney: 110
+      rewardExp: 70
       level: 6
       catchStartHour: 12
       catchEndHour: 13
@@ -8747,6 +8737,7 @@ MonoBehaviour:
       description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
       rewardMoney: 110
+      rewardExp: 70
       level: 6
       catchStartHour: 18
       catchEndHour: 19
@@ -8759,6 +8750,7 @@ MonoBehaviour:
         \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043B\u044E\u0431\u0432\u0438
         \u043C\u0430\u0442\u0435\u0440\u0438"
       rewardMoney: 110
+      rewardExp: 78
       level: 7
       catchStartHour: 13
       catchEndHour: 13
@@ -8769,6 +8761,7 @@ MonoBehaviour:
       title: "\u0418\u0441\u0443\u0441\u0438\u0443\u0441"
       description: "\u0425\u043E\u0434\u0438\u0442 \u043F\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0443"
       rewardMoney: 110
+      rewardExp: 78
       level: 7
       catchStartHour: 20
       catchEndHour: 21
@@ -8780,6 +8773,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
         \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
       rewardMoney: 125
+      rewardExp: 78
       level: 7
       catchStartHour: 14
       catchEndHour: 14
@@ -8790,6 +8784,7 @@ MonoBehaviour:
       title: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
       description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
       rewardMoney: 125
+      rewardExp: 78
       level: 7
       catchStartHour: 4
       catchEndHour: 5
@@ -8800,6 +8795,7 @@ MonoBehaviour:
       title: "\u0414\u0443\u0440\u043C\u0430\u043D\u0431\u0430\u043B\u0430"
       description: "\u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444, \u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444"
       rewardMoney: 125
+      rewardExp: 86
       level: 8
       catchStartHour: 9
       catchEndHour: 9
@@ -8810,6 +8806,7 @@ MonoBehaviour:
       title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u043A\u0442\u043E\u0440"
       description: "\u0412\u044B\u043B\u0435\u0447\u0438\u0442 \u0438 \u0438\u0437\u0443\u0432\u0435\u0447\u0438\u0442"
       rewardMoney: 125
+      rewardExp: 86
       level: 8
       catchStartHour: 21
       catchEndHour: 21
@@ -8821,6 +8818,7 @@ MonoBehaviour:
       description: "-\u041D\u0443 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C
         \"\u041C\u044F\u0443\"..."
       rewardMoney: 150
+      rewardExp: 86
       level: 8
       catchStartHour: 6
       catchEndHour: 8
@@ -8831,6 +8829,7 @@ MonoBehaviour:
       title: "\u0410\u0431\u043E\u043C\u0431\u0430"
       description: "\u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u2026"
       rewardMoney: 150
+      rewardExp: 86
       level: 8
       catchStartHour: 18
       catchEndHour: 20
@@ -8842,6 +8841,7 @@ MonoBehaviour:
       description: "\u0411\u0443\u043B\u044C\u043A. \u0414\u0436\u0435\u0439\u043C\u0441
         \u0411\u0443\u043B\u044C\u043A."
       rewardMoney: 150
+      rewardExp: 94
       level: 9
       catchStartHour: 16
       catchEndHour: 17
@@ -8854,6 +8854,7 @@ MonoBehaviour:
         \u043D\u043E \u0434\u0435\u043B\u0430\u0435\u0448\u044C \u044D\u0442\u043E
         \u0431\u0435\u0437 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F\u2026"
       rewardMoney: 150
+      rewardExp: 94
       level: 9
       catchStartHour: 0
       catchEndHour: 2
@@ -8864,6 +8865,7 @@ MonoBehaviour:
       title: "\u0416\u0435\u043C\u0447\u0443\u0436\u0438\u043D\u043A\u0430"
       description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
       rewardMoney: 200
+      rewardExp: 94
       level: 9
       catchStartHour: 9
       catchEndHour: 11
@@ -8875,6 +8877,7 @@ MonoBehaviour:
       description: "\u0418 \u043A\u0430\u043A \u0435\u0451 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
         ?"
       rewardMoney: 200
+      rewardExp: 94
       level: 9
       catchStartHour: 15
       catchEndHour: 17
@@ -8886,6 +8889,7 @@ MonoBehaviour:
       description: "\u0421\u0432\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0447\u0443\u0436\u0438\u0445,
         \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
       rewardMoney: 250
+      rewardExp: 102
       level: 10
       catchStartHour: 16
       catchEndHour: 16
@@ -8897,6 +8901,7 @@ MonoBehaviour:
       description: "\u0425\u043E\u043B\u043E\u0434\u043D\u0430\u044F \u0438 \u0433\u0440\u0443\u0441\u0442\u043D\u0430\u044F
         \u0440\u044B\u0431\u0430"
       rewardMoney: 250
+      rewardExp: 102
       level: 10
       catchStartHour: 22
       catchEndHour: 22
@@ -8908,6 +8913,7 @@ MonoBehaviour:
       description: "\u041D\u0435\u0434\u043E\u043B\u044E\u0431\u043B\u0438\u0432\u0430\u0435\u0442
         \u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0442\u0440\u043E\u0441\u043E\u0432..."
       rewardMoney: 250
+      rewardExp: 102
       level: 10
       catchStartHour: 3
       catchEndHour: 5
@@ -8919,6 +8925,7 @@ MonoBehaviour:
       description: "\u0414\u043E\u0441\u0442\u0430\u043B \u0432\u0441\u0435\u0445
         \u043A\u0440\u0430\u0441\u043D\u044B\u0445 \u0440\u044B\u0431"
       rewardMoney: 350
+      rewardExp: 102
       level: 10
       catchStartHour: 2
       catchEndHour: 3
@@ -8931,6 +8938,7 @@ MonoBehaviour:
         \u0442\u0430\u043A\u043E\u0435, \u043F\u043B\u044B\u0432\u0435\u0442\u0435
         \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
       rewardMoney: 350
+      rewardExp: 110
       level: 11
       catchStartHour: 19
       catchEndHour: 19
@@ -8942,6 +8950,7 @@ MonoBehaviour:
       description: "\u041D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0435\u0433\u043E
         \u0432 \u0441\u0435\u0439\u0444\u0435"
       rewardMoney: 350
+      rewardExp: 110
       level: 11
       catchStartHour: 14
       catchEndHour: 15
@@ -8953,6 +8962,7 @@ MonoBehaviour:
       description: "\u041B\u044E\u0431\u0438\u0442 \u043C\u043E\u0440\u0441\u043A\u0438\u0435
         \u0431\u0430\u043D\u0430\u043D\u044B"
       rewardMoney: 500
+      rewardExp: 110
       level: 11
       catchStartHour: 6
       catchEndHour: 7
@@ -8963,6 +8973,7 @@ MonoBehaviour:
       title: "\u0422\u0438\u0433\u0440\u043E\u043D"
       description: "\u0423\u043F\u043B\u044B\u043B \u0438\u0437 \u0446\u0438\u0440\u043A\u0430\u2026"
       rewardMoney: 500
+      rewardExp: 110
       level: 11
       catchStartHour: 8
       catchEndHour: 9
@@ -8973,6 +8984,7 @@ MonoBehaviour:
       title: "\u041D\u0435\u0432\u0435\u0434\u0438\u043C\u0431\u0440\u0438\u044F"
       description: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0432\u044B\u0440\u043E\u043D\u0438\u0442\u044C"
       rewardMoney: 1000
+      rewardExp: 118
       level: 12
       catchStartHour: 21
       catchEndHour: 23
@@ -8984,6 +8996,7 @@ MonoBehaviour:
       description: "\u041D\u0438\u043A\u0430\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
         \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
       rewardMoney: 1000
+      rewardExp: 118
       level: 12
       catchStartHour: 12
       catchEndHour: 17
@@ -8996,6 +9009,7 @@ MonoBehaviour:
         \u0430 \u043F\u043E \u0441\u0443\u0442\u0438 \u0442\u043E\u0442 \u0435\u0449\u0451
         \u0437\u043C\u0435\u0439"
       rewardMoney: 1250
+      rewardExp: 118
       level: 12
       catchStartHour: 6
       catchEndHour: 11
@@ -9007,6 +9021,7 @@ MonoBehaviour:
       description: "\u041B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0435
         \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
       rewardMoney: 1500
+      rewardExp: 118
       level: 12
       catchStartHour: 18
       catchEndHour: 23
@@ -9018,6 +9033,7 @@ MonoBehaviour:
       description: "\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u044D\u0442\u043E\u0433\u043E
         \u043C\u0438\u0440\u0430"
       rewardMoney: 5000
+      rewardExp: 200
       level: 13
       catchStartHour: 0
       catchEndHour: 23
@@ -12029,7 +12045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cat: {fileID: 452722591}
-  sky: {fileID: 3993822}
+  sky: {fileID: 0}
   pirs: {fileID: 994369360}
   water: {fileID: 1249049864}
   line: {fileID: 984939830}
@@ -12054,6 +12070,7 @@ MonoBehaviour:
     title: 
     description: 
     rewardMoney: 0
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 0
@@ -15798,7 +15815,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918132990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15806,7 +15823,7 @@ RectTransform:
   - {fileID: 286398453}
   - {fileID: 1744300234}
   - {fileID: 1638254988}
-  m_Father: {fileID: 1806498978}
+  m_Father: {fileID: 2048755084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21012,7 +21029,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3993824}
+  - {fileID: 2048644446}
   - {fileID: 1249049866}
   - {fileID: 994369362}
   m_Father: {fileID: 0}
@@ -22449,6 +22466,7 @@ MonoBehaviour:
     title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430"
     description: "\u0410\u0443\u0447!"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 0
@@ -22459,6 +22477,7 @@ MonoBehaviour:
     title: "\u0427\u0443\u043C\u0430\u0437\u0438\u043A"
     description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 1
     catchEndHour: 1
@@ -22469,6 +22488,7 @@ MonoBehaviour:
     title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
     description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 2
     catchEndHour: 2
@@ -22479,6 +22499,7 @@ MonoBehaviour:
     title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437"
     description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 3
     catchEndHour: 3
@@ -22490,6 +22511,7 @@ MonoBehaviour:
     description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
       \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 4
     catchEndHour: 4
@@ -22500,6 +22522,7 @@ MonoBehaviour:
     title: "\u0422\u0430\u0431\u0443\u0440\u0435\u0442\u043A\u0430"
     description: "\u0412\u0441\u0435 \u0432\u0440\u0435\u043C\u044F \u0441\u043E\u0441\u043A\u0430\u043B\u044C\u0437\u044B\u0432\u0430\u044E"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 5
     catchEndHour: 5
@@ -22511,6 +22534,7 @@ MonoBehaviour:
     description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
       \u0432\u0438\u0434\u0430"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 6
     catchEndHour: 6
@@ -22521,6 +22545,7 @@ MonoBehaviour:
     title: "\u0426\u0432\u0435\u0442\u0438\u043A"
     description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 7
     catchEndHour: 7
@@ -22531,6 +22556,7 @@ MonoBehaviour:
     title: "\u041B\u0443\u043D\u043A\u0430"
     description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 8
     catchEndHour: 8
@@ -22542,6 +22568,7 @@ MonoBehaviour:
     description: "\u0425\u0440\u0440-\u043F\u0444\u0444 \u0425\u0440\u0440-\u043F\u0444\u0444(\u0437\u0432\u0443\u043A\u0438
       \u0441\u043D\u0430)"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 9
     catchEndHour: 9
@@ -22552,6 +22579,7 @@ MonoBehaviour:
     title: "\u0423\u0433\u0440\u0435\u043B\u043A\u0430"
     description: "\u0422\u0435\u043F\u043B\u043E\u043E\u043E"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 10
     catchEndHour: 10
@@ -22563,6 +22591,7 @@ MonoBehaviour:
     description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
       \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 11
     catchEndHour: 11
@@ -22575,6 +22604,7 @@ MonoBehaviour:
       \u0441\u0438\u043D\u0438\u0439, \u0430 \u0443 \u0442\u0435\u0431\u044F \u0441\u043F\u0438\u043D\u0430
       \u0431\u0435\u043B\u0430\u044F"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 12
     catchEndHour: 12
@@ -22585,6 +22615,7 @@ MonoBehaviour:
     title: "\u0421\u0435\u0437\u043E\u043D\u043D\u0438\u043A"
     description: "\u041E\u0447\u0435\u043D\u044C \u043C\u043E\u0434\u043D\u044B\u0439"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 13
     catchEndHour: 13
@@ -22596,6 +22627,7 @@ MonoBehaviour:
     description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
       \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 14
     catchEndHour: 14
@@ -22607,6 +22639,7 @@ MonoBehaviour:
     description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
       \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 15
     catchEndHour: 15
@@ -22618,6 +22651,7 @@ MonoBehaviour:
     description: "\u0421\u0432\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0447\u0443\u0436\u0438\u0445,
       \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 16
     catchEndHour: 16
@@ -22629,6 +22663,7 @@ MonoBehaviour:
     description: "\u041F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E \u043E\u0431\u043E
       \u0447\u0442\u043E-\u0442\u043E \u0431\u044C\u0435\u0442\u0441\u044F"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 17
     catchEndHour: 17
@@ -22639,6 +22674,7 @@ MonoBehaviour:
     title: "\u041E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044C"
     description: "\u0420\u0435\u0447\u043D\u043E\u0439 \u043E\u0440\u0435\u0445"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 18
     catchEndHour: 18
@@ -22651,6 +22687,7 @@ MonoBehaviour:
       \u0442\u0430\u043A\u043E\u0435, \u043F\u043B\u044B\u0432\u0435\u0442\u0435
       \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 19
     catchEndHour: 19
@@ -22663,6 +22700,7 @@ MonoBehaviour:
       \u0442\u0435\u043B\u043E, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0438
       \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 20
     catchEndHour: 20
@@ -22673,6 +22711,7 @@ MonoBehaviour:
     title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u0301\u043A"
     description: "\u0418 \u0443\u043A\u0443\u0441\u0438\u0442 \u0438 \u0432\u044B\u043B\u0435\u0447\u0438\u0442"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 21
     catchEndHour: 21
@@ -22684,6 +22723,7 @@ MonoBehaviour:
     description: "\u041E\u0447\u0435\u043D\u044C \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F
       \u0438 \u0433\u0440\u0443\u0441\u0442\u043D\u0430\u044F \u0440\u044B\u0431\u0430"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 22
     catchEndHour: 22
@@ -22696,6 +22736,7 @@ MonoBehaviour:
       \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
       \u0442\u0435\u0431\u044F!"
     rewardMoney: 200
+    rewardExp: 0
     level: 0
     catchStartHour: 23
     catchEndHour: 23
@@ -22706,6 +22747,7 @@ MonoBehaviour:
     title: "\u041F\u0430\u0443\u043A\u043E\u0444\u0443\u0433\u0430"
     description: "\u0421\u0443\u043F\u0435\u0440 \u044F\u0434\u043E\u0432\u0438\u0442\u0430"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 1
@@ -22717,6 +22759,7 @@ MonoBehaviour:
     description: "\u0423 \u043D\u0435\u0433\u043E \u0432 \u0434\u0443\u0448\u0435
       \u0432\u0441\u0435\u0433\u0434\u0430 2007\u043E\u0439"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 2
     catchEndHour: 3
@@ -22727,6 +22770,7 @@ MonoBehaviour:
     title: "\u041B\u0435\u0442\u0443\u0447\u0444\u043E\u0431"
     description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 4
     catchEndHour: 5
@@ -22738,6 +22782,7 @@ MonoBehaviour:
     description: "\u041B\u044E\u0431\u0438\u0442 \u0438\u043A\u0440\u0443, \u0438
       \u0431\u0430\u043D\u0430\u043D\u044B"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 6
     catchEndHour: 7
@@ -22748,6 +22793,7 @@ MonoBehaviour:
     title: "\u0422\u0438\u0433\u0440\u043E\u043D"
     description: "\u0420-\u0440-\u0440-\u0440-\u0440-\u0440-\u0440"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 8
     catchEndHour: 9
@@ -22758,6 +22804,7 @@ MonoBehaviour:
     title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442"
     description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 10
     catchEndHour: 11
@@ -22768,6 +22815,7 @@ MonoBehaviour:
     title: "\u0413\u0435\u043F\u0430\u0440\u0434\u043D\u0438\u043A"
     description: "\u041E\u0447\u0435\u043D\u044C \u0431\u044B\u0441\u0442\u0440\u044B\u0439"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 12
     catchEndHour: 13
@@ -22779,6 +22827,7 @@ MonoBehaviour:
     description: "\u041D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0435\u0433\u043E
       \u0432 \u0441\u0435\u0439\u0444\u0435"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 14
     catchEndHour: 15
@@ -22790,6 +22839,7 @@ MonoBehaviour:
     description: "\u0412\u0435\u0441\u044C \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
       \u043F\u043E\u0431\u0438\u0442\u044B\u0439"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 16
     catchEndHour: 17
@@ -22801,6 +22851,7 @@ MonoBehaviour:
     description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
       \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 18
     catchEndHour: 19
@@ -22811,6 +22862,7 @@ MonoBehaviour:
     title: "\u0418\u0437\u044F\u0449\u043D\u043E\u0440\u044B\u043B"
     description: "\u041D\u0443 \u043E\u0447\u0435\u043D\u044C \u0441\u0430\u043C\u043E\u0432\u043B\u044E\u0431\u043B\u0435\u043D\u043D\u044B\u0439"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 20
     catchEndHour: 21
@@ -22822,6 +22874,7 @@ MonoBehaviour:
     description: "\u041D\u0435 \u043F\u0440\u043E\u0434\u0430\u0435\u0442\u0441\u044F
       (\u044D\u0442\u043E \u043D\u0435 \u043F\u0440\u0430\u0432\u0434\u0430)"
     rewardMoney: 1000
+    rewardExp: 0
     level: 0
     catchStartHour: 22
     catchEndHour: 23
@@ -22833,6 +22886,7 @@ MonoBehaviour:
     description: "\u0417\u0430\u0433\u0430\u0434\u043E\u0447\u0435\u043D \u043F\u043E
       \u0447\u0430\u0441\u0430\u043C"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 2
@@ -22843,6 +22897,7 @@ MonoBehaviour:
     title: "\u0417\u043E\u043B\u043E\u0442\u043E\u043A\u0443\u043D\u044C"
     description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u043C\u0435\u0434\u0432\u0435\u0436\u0430\u0442\u043D\u0438\u043A\u0430"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 3
     catchEndHour: 5
@@ -22853,6 +22908,7 @@ MonoBehaviour:
     title: "\u041D\u0435\u0444\u0440\u0438\u0442\u0440\u0435\u0441\u043A\u0430\u0301"
     description: "\u041F\u043E\u0434\u0430\u0440\u044E \u0438\u043C\u043F\u0435\u0440\u0430\u0442\u043E\u0440\u0443"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 6
     catchEndHour: 8
@@ -22863,6 +22919,7 @@ MonoBehaviour:
     title: "\u0416\u0435\u043C\u0447\u0443\u0436\u043D\u0438\u043A"
     description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 9
     catchEndHour: 11
@@ -22874,6 +22931,7 @@ MonoBehaviour:
     description: "\u0422\u044B \u043F\u043E\u0434\u0441\u0430\u0434\u0438\u043B \u0435\u0433\u043E,
       \u0430 \u043E\u043D \u0442\u0435\u0431\u044F"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 12
     catchEndHour: 14
@@ -22884,6 +22942,7 @@ MonoBehaviour:
     title: "\u0411\u0440\u0438\u043B\u044C\u044F\u043D\u043E\u043C\u0430\u0440"
     description: "\u0421\u0438\u043B\u044C\u043D\u043E \u0431\u043B\u0435\u0441\u0442\u0438\u0442"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 15
     catchEndHour: 17
@@ -22894,6 +22953,7 @@ MonoBehaviour:
     title: "\u042F\u0434\u0435\u0440\u043A\u0430"
     description: "\u041B\u0443\u0447\u0448\u0435 \u0435\u0435 \u043D\u0435 \u0442\u0440\u043E\u0433\u0430\u0442\u044C"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 18
     catchEndHour: 20
@@ -22904,6 +22964,7 @@ MonoBehaviour:
     title: "\u0424\u0430\u043D\u0442\u043E\u043C"
     description: "\u041A\u0443\u0434\u0430 \u043E\u043D \u0434\u0435\u043B\u0441\u044F?!"
     rewardMoney: 10000
+    rewardExp: 0
     level: 0
     catchStartHour: 21
     catchEndHour: 23
@@ -22916,6 +22977,7 @@ MonoBehaviour:
       \u0438\u0437-\u0437\u0430 \u043D\u0430\u043B\u0438\u0447\u0438\u044F \u0432\u0441\u0435\u0433\u043E
       \u043B\u0438\u0448\u044C \u043E\u0434\u043D\u043E\u0433\u043E \u043A\u043B\u044E\u0432\u0430"
     rewardMoney: 100000
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 5
@@ -22928,6 +22990,7 @@ MonoBehaviour:
       \u043D\u043E \u043F\u043E \u0441\u0443\u0442\u0438 \u0442\u0430 \u0435\u0449\u0451
       \u0437\u043C\u0435\u044E\u043A\u0430"
     rewardMoney: 100000
+    rewardExp: 0
     level: 0
     catchStartHour: 6
     catchEndHour: 11
@@ -22939,6 +23002,7 @@ MonoBehaviour:
     description: "\u041D\u0438\u043A\u0430\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
       \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
     rewardMoney: 100000
+    rewardExp: 0
     level: 0
     catchStartHour: 12
     catchEndHour: 17
@@ -22949,6 +23013,7 @@ MonoBehaviour:
     title: "\u041C\u0435\u0433\u0430\u0434\u0440\u0430\u0434\u043E\u043D"
     description: "\u0414\u0440\u0435\u0432\u043D\u044F\u044F \u0437\u0430\u0436\u0438\u0433\u0430\u043B\u043A\u0430"
     rewardMoney: 100000
+    rewardExp: 0
     level: 0
     catchStartHour: 18
     catchEndHour: 23
@@ -22960,6 +23025,7 @@ MonoBehaviour:
     description: "\u041B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0435
       \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
     rewardMoney: 2000000
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 23
@@ -24302,6 +24368,7 @@ MonoBehaviour:
     title: 
     description: 
     rewardMoney: 0
+    rewardExp: 0
     level: 0
     catchStartHour: 0
     catchEndHour: 0
@@ -29643,7 +29710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -30589,13 +30656,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686183215}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2072015856}
-  m_Father: {fileID: 1806498978}
+  m_Father: {fileID: 2048755084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -30616,7 +30683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -31270,7 +31337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -32434,7 +32501,7 @@ GameObject:
   - component: {fileID: 1806498978}
   - component: {fileID: 1806498980}
   m_Layer: 5
-  m_Name: LevelProgress
+  m_Name: ExpManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32452,13 +32519,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 918132991}
-  - {fileID: 1686183216}
+  - {fileID: 2048755084}
   m_Father: {fileID: 303618601}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 228.00002, y: 92}
+  m_AnchoredPosition: {x: 228, y: 92}
   m_SizeDelta: {x: 322.5, y: 80}
   m_Pivot: {x: 0.49999988, y: 0.5}
 --- !u!222 &1806498980
@@ -35721,7 +35787,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588606427}
   m_HandleRect: {fileID: 1588606426}
   m_Direction: 2
-  m_Value: 0.00000007112163
+  m_Value: 0.00000014224325
   m_Size: 0.5093619
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -36581,6 +36647,127 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038823056}
   m_CullTransparentMesh: 1
+--- !u!1 &2048644445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048644446}
+  - component: {fileID: 2048644447}
+  m_Layer: 0
+  m_Name: Sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048644446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048644445}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1210294836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2048644447
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048644445}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 288471864ae96b749b475a947abcf78e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c12193f3b4a0cd84d84cfb9e179092cf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 2
+  m_Size: {x: 89.84, y: 26.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2048755083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048755084}
+  m_Layer: 5
+  m_Name: UIContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2048755084
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048755083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 918132991}
+  - {fileID: 1686183216}
+  m_Father: {fileID: 1806498978}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2050107098
 GameObject:
   m_ObjectHideFlags: 0
@@ -36791,7 +36978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

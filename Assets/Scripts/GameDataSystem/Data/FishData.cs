@@ -8,6 +8,7 @@ public class FishData // класс содержащий информацию о
     public string title; // название 
     public string description; // описание 
     public int rewardMoney; // максимальная награда за поимку
+    public int rewardExp; // максимальное количество опыта за поимку 
     public int level; //уровень с которого можно поимать рыбу
     public int catchStartHour; // первый час ловли
     public int catchEndHour; // последний час ловли

@@ -7,13 +7,12 @@ using Kilosoft.Tools;
 
 public class GameDataSystem : MonoBehaviour
 {
-
     [SerializeField] private EventBus _eventBus;
-    
+
     [SerializeField] private GameData _currentGameData;
     [SerializeField] private GameData _baseGameData;
     [SerializeField] private List<Sprite> _fishSprites;
- 
+
     [SerializeField] private List<Sprite> _rodsSprites;
     [SerializeField] private List<Sprite> _hooksSprites;
     [SerializeField] private GameObject _enviromentRod;
@@ -25,7 +24,6 @@ public class GameDataSystem : MonoBehaviour
 
     public void Awake()
     {
-      
         Application.targetFrameRate = _maxFrameRate;
         if (_currentGameData.fishDatas == null)
             ChangeCurrentGameDataWithBase();
@@ -74,7 +72,7 @@ public class GameDataSystem : MonoBehaviour
         {
             hook.isBuyed = true;
         }
-        
+
         foreach (var rod in _currentGameData.rodDatas)
         {
             rod.isBuyed = true;
@@ -85,7 +83,7 @@ public class GameDataSystem : MonoBehaviour
             bait.isBuyed = true;
             bait.itemCount = 10;
         }
-        
+
         IncreaseMoney(999999999);
         SaveGameData();
     }
@@ -150,12 +148,10 @@ public class GameDataSystem : MonoBehaviour
             operationMoney > currentMoneyAmount)
         {
             throw new Exception("Ошибка: operationMoney не может быть меньше нуля!");
-             
         }
 
         _currentGameData.moneyBalance = targetMoneyAmount;
         _eventBus.TriggerMoneyBalanceChanged(targetMoneyAmount);
-
     }
 
     public void IncreaseMoney(int operationMoney)
@@ -170,14 +166,17 @@ public class GameDataSystem : MonoBehaviour
 
         _currentGameData.moneyBalance = targetMoneyAmount;
         _eventBus.TriggerMoneyBalanceChanged(targetMoneyAmount);
-
     }
 
     public int GetCurrentGameDayTimeInMinuties() => _currentGameData.gameDayTimeInMinutes;
     public FishData GetFishFromAll(int index) => _currentGameData.fishDatas[index];
     public Sprite GetFishSpriteFromAll(int index) => _fishSprites[index];
     public List<FishData> GetAllFishesData() => _currentGameData.fishDatas;
-
+    
+    /// <summary>
+    /// Returns the count of all fishes in the current game data.
+    /// </summary>
+    /// <returns>The number of fishes in the current game data.</returns>
     public int GetAllFishesCount()
     {
         return _currentGameData.fishDatas.Count;
