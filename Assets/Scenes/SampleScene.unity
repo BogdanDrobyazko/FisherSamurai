@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 32564601}
   - component: {fileID: 32564600}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,8 +257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 57847951}
   - component: {fileID: 57847950}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,8 +391,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 61798204}
   - component: {fileID: 61798206}
   m_Layer: 5
-  m_Name: FPSCounter
+  m_Name: FPSCounterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -526,8 +526,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 60
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1096,8 +1096,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0425"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 80213540}
   - component: {fileID: 80213539}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1389,8 +1389,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1902,8 +1902,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2341,7 +2341,7 @@ GameObject:
   - component: {fileID: 138907031}
   - component: {fileID: 138907030}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2388,8 +2388,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 231188719}
   - component: {fileID: 231188718}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3492,8 +3492,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3626,7 +3626,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_sharedMaterial: {fileID: -3425912869688255754, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3713,7 +3713,7 @@ GameObject:
   - component: {fileID: 255576390}
   - component: {fileID: 255576389}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3760,8 +3760,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4135,8 +4135,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u042D\u043A\u0438\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4696,7 +4696,7 @@ GameObject:
   - component: {fileID: 324763094}
   - component: {fileID: 324763093}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4743,8 +4743,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5355,7 +5355,7 @@ GameObject:
   - component: {fileID: 366746488}
   - component: {fileID: 366746487}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5402,8 +5402,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6482,7 +6482,7 @@ GameObject:
   - component: {fileID: 417167268}
   - component: {fileID: 417167267}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6529,8 +6529,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6663,8 +6663,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0421\u0442\u0435\u0440\u0435\u0442\u044C \u0432\u0435\u0441\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6797,7 +6797,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_sharedMaterial: {fileID: -3425912869688255754, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7485,8 +7485,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0441\u0451"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7746,11 +7746,12 @@ MonoBehaviour:
   _eventBus: {fileID: 1085512453}
   _currentGameData:
     isGameDataExist: 1
-    experiencePoints: 0
+    exp: 0
     moneyBalance: 0
     currentHookIndex: 0
     currentRodIndex: 0
     currentBaitIndex: 4
+    levelThresholds: 64000000c80000002c010000f4010000ee020000e8030000e204000040060000d0070000c4090000800c0000a00f000088130000
     gameDayTimeInMinutes: 720
     fishDatas:
     - id: 0
@@ -8459,11 +8460,12 @@ MonoBehaviour:
       typeOfFishToImprovement: 0
   _baseGameData:
     isGameDataExist: 0
-    experiencePoints: 0
+    exp: 0
     moneyBalance: 0
     currentHookIndex: 0
     currentRodIndex: 0
     currentBaitIndex: 4
+    levelThresholds: 64000000c80000002c010000f4010000ee020000e8030000e204000040060000d0070000c4090000800c0000a00f000088130000
     gameDayTimeInMinutes: 720
     fishDatas:
     - id: 0
@@ -9986,7 +9988,7 @@ GameObject:
   - component: {fileID: 558344061}
   - component: {fileID: 558344060}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10033,8 +10035,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10854,7 +10856,7 @@ GameObject:
   - component: {fileID: 600054314}
   - component: {fileID: 600054313}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10901,8 +10903,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11253,8 +11255,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041D\u043E\u0432\u0430\u044F \u0420\u044B\u0431\u0430!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11340,7 +11342,7 @@ GameObject:
   - component: {fileID: 618173586}
   - component: {fileID: 618173585}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11387,8 +11389,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11705,7 +11707,7 @@ GameObject:
   - component: {fileID: 640868588}
   - component: {fileID: 640868587}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11752,8 +11754,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11874,7 +11876,7 @@ GameObject:
   - component: {fileID: 648907128}
   - component: {fileID: 648907127}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11921,8 +11923,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12711,8 +12713,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u0434\u043E\u0447\u043A\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12798,7 +12800,7 @@ GameObject:
   - component: {fileID: 735118599}
   - component: {fileID: 735118598}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12845,8 +12847,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13275,7 +13277,7 @@ GameObject:
   - component: {fileID: 759685374}
   - component: {fileID: 759685373}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13322,8 +13324,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: s
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13751,7 +13753,7 @@ GameObject:
   - component: {fileID: 795616750}
   - component: {fileID: 795616749}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13798,8 +13800,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14280,8 +14282,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041A\u0443\u043F\u0438\u0442\u044C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14744,7 +14746,7 @@ GameObject:
   - component: {fileID: 864798518}
   - component: {fileID: 864798517}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14791,8 +14793,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14925,8 +14927,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ---
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15354,8 +15356,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +++
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16469,7 +16471,7 @@ GameObject:
   - component: {fileID: 973579111}
   - component: {fileID: 973579110}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16516,8 +16518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16857,8 +16859,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041F\u0430\u0443\u0437\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17249,8 +17251,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0412 \u043D\u0430\u043B\u0438\u0447\u0438\u0438: 1000000\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17653,7 +17655,7 @@ GameObject:
   - component: {fileID: 994822643}
   - component: {fileID: 994822642}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17700,8 +17702,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17834,8 +17836,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18888,7 +18890,7 @@ GameObject:
   - component: {fileID: 1093515383}
   - component: {fileID: 1093515382}
   m_Layer: 5
-  m_Name: CatchingTimeRange
+  m_Name: CatchingTimeRangeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18935,8 +18937,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 12
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19022,7 +19024,7 @@ GameObject:
   - component: {fileID: 1097536790}
   - component: {fileID: 1097536789}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19069,8 +19071,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19156,7 +19158,7 @@ GameObject:
   - component: {fileID: 1105578799}
   - component: {fileID: 1105578798}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19203,8 +19205,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19638,8 +19640,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '-'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19951,7 +19953,7 @@ GameObject:
   - component: {fileID: 1135673370}
   - component: {fileID: 1135673369}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19998,8 +20000,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20549,8 +20551,8 @@ MonoBehaviour:
     D\n\u0412\u0435\u0441: 1884\n\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C:
     188\n\u0420\u0435\u0447\u043D\u043E\u0439 \u043E\u0440\u0435\u0445asdasdasdasdasdasdasdasdasdasdasdasdasdas"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20636,7 +20638,7 @@ GameObject:
   - component: {fileID: 1176851433}
   - component: {fileID: 1176851432}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20683,8 +20685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21046,7 +21048,7 @@ GameObject:
   - component: {fileID: 1221777652}
   - component: {fileID: 1221777651}
   m_Layer: 5
-  m_Name: RecordWeightValue
+  m_Name: RecordWeightValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21093,8 +21095,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
-  m_sharedMaterial: {fileID: -3425912869688255754, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21346,7 +21348,7 @@ GameObject:
   - component: {fileID: 1230281194}
   - component: {fileID: 1230281193}
   m_Layer: 5
-  m_Name: RecordRankTitle
+  m_Name: RecordRankTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21394,8 +21396,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041B\u0443\u0447\u0448\u0438\u0439 \u0440\u0430\u043D\u0433:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21481,7 +21483,7 @@ GameObject:
   - component: {fileID: 1231158853}
   - component: {fileID: 1231158852}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21528,8 +21530,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22154,8 +22156,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23122,7 +23124,7 @@ GameObject:
   - component: {fileID: 1303580320}
   - component: {fileID: 1303580319}
   m_Layer: 5
-  m_Name: RecordPriceValue
+  m_Name: RecordPriceValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23169,8 +23171,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
-  m_sharedMaterial: {fileID: -3425912869688255754, guid: a1f9d67ac6767e44282084b7c7d5fa33, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23840,7 +23842,7 @@ GameObject:
   - component: {fileID: 1328415654}
   - component: {fileID: 1328415653}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23887,8 +23889,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24184,7 +24186,7 @@ GameObject:
   - component: {fileID: 1338911576}
   - component: {fileID: 1338911575}
   m_Layer: 5
-  m_Name: ItemTitle
+  m_Name: ItemTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24232,8 +24234,8 @@ MonoBehaviour:
   m_text: "\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0430\u044F
     \u0423\u0434\u043E\u0447\u043A\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24534,8 +24536,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041A\u0440\u044E\u0447\u043A\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24755,7 +24757,7 @@ GameObject:
   - component: {fileID: 1389925489}
   - component: {fileID: 1389925488}
   m_Layer: 5
-  m_Name: CatchingTimeTitle
+  m_Name: CatchingTimeTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24803,8 +24805,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0412\u0440\u0435\u043C\u044F \u0432\u044B\u043B\u043E\u0432\u0430 :"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25099,7 +25101,7 @@ GameObject:
   - component: {fileID: 1393130683}
   - component: {fileID: 1393130682}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25146,8 +25148,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25233,7 +25235,7 @@ GameObject:
   - component: {fileID: 1408700761}
   - component: {fileID: 1408700760}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25280,8 +25282,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25367,7 +25369,7 @@ GameObject:
   - component: {fileID: 1416398034}
   - component: {fileID: 1416398033}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25414,8 +25416,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25728,7 +25730,7 @@ GameObject:
   - component: {fileID: 1448370363}
   - component: {fileID: 1448370362}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25775,8 +25777,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -25930,7 +25932,7 @@ GameObject:
   - component: {fileID: 1465407819}
   - component: {fileID: 1465407818}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25977,8 +25979,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26592,7 +26594,7 @@ GameObject:
   - component: {fileID: 1498296025}
   - component: {fileID: 1498296024}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26639,8 +26641,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27072,7 +27074,7 @@ GameObject:
   - component: {fileID: 1516979970}
   - component: {fileID: 1516979969}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27119,8 +27121,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -27990,7 +27992,7 @@ GameObject:
   - component: {fileID: 1556818388}
   - component: {fileID: 1556818387}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28037,8 +28039,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -28124,7 +28126,7 @@ GameObject:
   - component: {fileID: 1565939954}
   - component: {fileID: 1565939953}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28171,8 +28173,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29084,7 +29086,7 @@ GameObject:
   - component: {fileID: 1608324432}
   - component: {fileID: 1608324431}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29131,8 +29133,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29218,7 +29220,7 @@ GameObject:
   - component: {fileID: 1611381088}
   - component: {fileID: 1611381087}
   m_Layer: 5
-  m_Name: ItemPriceTitle
+  m_Name: ItemPriceTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29265,8 +29267,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C: \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29399,8 +29401,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u043F\u043E\u0434\u0441\u0435\u043A\u0430\u0439!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29486,7 +29488,7 @@ GameObject:
   - component: {fileID: 1623486379}
   - component: {fileID: 1623486378}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29533,8 +29535,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -30186,7 +30188,7 @@ GameObject:
   - component: {fileID: 1665619229}
   - component: {fileID: 1665619228}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30233,8 +30235,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -30320,7 +30322,7 @@ GameObject:
   - component: {fileID: 1668161668}
   - component: {fileID: 1668161667}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30367,8 +30369,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31164,7 +31166,7 @@ GameObject:
   - component: {fileID: 1743866630}
   - component: {fileID: 1743866629}
   m_Layer: 5
-  m_Name: FishTitle
+  m_Name: FishTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31211,8 +31213,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31373,7 +31375,7 @@ GameObject:
   - component: {fileID: 1747689097}
   - component: {fileID: 1747689096}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31420,8 +31422,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31994,7 +31996,7 @@ GameObject:
   - component: {fileID: 1767820945}
   - component: {fileID: 1767820944}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32041,8 +32043,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32262,7 +32264,7 @@ GameObject:
   - component: {fileID: 1798915961}
   - component: {fileID: 1798915960}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32309,8 +32311,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -32685,7 +32687,7 @@ GameObject:
   - component: {fileID: 1813053234}
   - component: {fileID: 1813053233}
   m_Layer: 5
-  m_Name: FishDiscription
+  m_Name: FishDiscriptionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32732,8 +32734,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444\u0444"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33055,7 +33057,7 @@ GameObject:
   - component: {fileID: 1838983764}
   - component: {fileID: 1838983763}
   m_Layer: 5
-  m_Name: RecordPriceTitle
+  m_Name: RecordPriceTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33104,8 +33106,8 @@ MonoBehaviour:
   m_text: "\u0420\u0435\u043A\u043E\u0440\u0434\u043D\u0430\u044F \u0446\u0435\u043D\u0430
     :"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33276,7 +33278,7 @@ GameObject:
   - component: {fileID: 1853114179}
   - component: {fileID: 1853114178}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33323,8 +33325,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33488,8 +33490,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0425"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -33868,8 +33870,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34286,8 +34288,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34420,8 +34422,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041D\u0430\u0436\u0438\u0432\u043A\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34507,7 +34509,7 @@ GameObject:
   - component: {fileID: 1922440054}
   - component: {fileID: 1922440053}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34554,8 +34556,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -34716,7 +34718,7 @@ GameObject:
   - component: {fileID: 1934338128}
   - component: {fileID: 1934338127}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34763,8 +34765,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35280,7 +35282,7 @@ GameObject:
   - component: {fileID: 1951111941}
   - component: {fileID: 1951111940}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35327,8 +35329,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: B
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35583,7 +35585,7 @@ GameObject:
   - component: {fileID: 1979714189}
   - component: {fileID: 1979714188}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35630,8 +35632,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -35787,8 +35789,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588606427}
   m_HandleRect: {fileID: 1588606426}
   m_Direction: 2
-  m_Value: 0.00000014224325
-  m_Size: 0.5093619
+  m_Value: 0.00000021336484
+  m_Size: 0.50936186
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -36059,8 +36061,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -36193,8 +36195,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "211\n \n 111\n \n 112"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -36280,7 +36282,7 @@ GameObject:
   - component: {fileID: 2019778206}
   - component: {fileID: 2019778205}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36327,8 +36329,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -36962,7 +36964,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.4, y: -1.3}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 26.405, y: 29.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2072015857
 MonoBehaviour:
@@ -36984,10 +36986,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 13
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37011,12 +37013,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.7
-  m_fontSizeBase: 45.7
+  m_fontSize: 43.05
+  m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 45
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -37357,7 +37359,7 @@ GameObject:
   - component: {fileID: 2099872038}
   - component: {fileID: 2099872037}
   m_Layer: 5
-  m_Name: ItemDescription
+  m_Name: ItemDescriptionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37404,8 +37406,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 222222222222222222222222222222222222222222222222222222222222222222
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37491,7 +37493,7 @@ GameObject:
   - component: {fileID: 2104017920}
   - component: {fileID: 2104017919}
   m_Layer: 5
-  m_Name: FishRank(TMP)
+  m_Name: FishRankText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37538,8 +37540,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -37782,8 +37784,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
-  m_sharedMaterial: {fileID: 6905555209824214094, guid: db49ba348b2d2b447886bdb2c7a723ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

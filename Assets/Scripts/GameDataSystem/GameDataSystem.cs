@@ -121,6 +121,20 @@ public class GameDataSystem : MonoBehaviour
     {
         Application.targetFrameRate = _maxFrameRate;
     }
+    
+    [EditorButton("Fill level thresholds")]
+    public void fillThresholds()
+    {
+        int previousLevelThreshold = 0;
+        for (int i = 0; i < 13; i++)
+        {
+            _currentGameData.levelThresholds[i] = previousLevelThreshold + (int)(100 * (float)Math.Pow(1.2, i));
+            //округлим до десятков
+            _currentGameData.levelThresholds[i] = (_currentGameData.levelThresholds[i] / 10) * 10;
+            previousLevelThreshold = _currentGameData.levelThresholds[i];
+        }
+        
+    }
 
     public void ClearGameData()
     {

@@ -13,9 +13,17 @@ public class EventBus : MonoBehaviour, IReadOnlyEventBus
     }
     
     public UnityEvent<int> OnMoneyBalanceChanged { get; } = new();
-    
+
     public void TriggerMoneyBalanceChanged(int newAmount)
     {
         OnMoneyBalanceChanged?.Invoke(newAmount);
     }
+
+    public UnityEvent<int> OnExpChanged { get; } = new();
+    
+    public void TriggerExpChanged(int newAmount)
+    {
+        OnExpChanged?.Invoke(newAmount);
+    }
+    
 }
