@@ -6,4 +6,7 @@ public interface IReadOnlyEventBus
     public UnityEvent<FishData> OnFishCatched { get; }
     public UnityEvent<int> OnMoneyBalanceChanged { get; }
     public UnityEvent<int> OnExpChanged { get; }
+
+
+    public UnityEvent<int> OnLevelChanged { get; }
 }

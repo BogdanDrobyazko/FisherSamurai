@@ -33,7 +33,7 @@ public class SettingsState : IPauseState
             for (int i = 0; i < _manager.gameDataSystem.GetAllFishesCount(); i++)
             {
                 _manager.fishesCollection.transform.GetChild(i).transform.GetComponent<Button>().interactable =
-                    _manager.gameDataSystem.GetFishFromAll(i).isCathed;
+                    _manager.gameDataSystem.GetFishFromAll(i).isCaught;
             }
         }
 

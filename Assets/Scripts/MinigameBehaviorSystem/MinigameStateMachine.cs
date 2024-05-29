@@ -60,7 +60,7 @@ public class MinigameStateMachine : MonoBehaviour, PullingMinigameManager
         for (int i = 0; i < gameDataSystem.GetAllFishesCount(); i++)
         {
             fishesCollection.transform.GetChild(i).transform.GetComponent<Button>().interactable =
-                gameDataSystem.GetFishFromAll(i).isCathed;
+                gameDataSystem.GetFishFromAll(i).isCaught;
         }
     }
 

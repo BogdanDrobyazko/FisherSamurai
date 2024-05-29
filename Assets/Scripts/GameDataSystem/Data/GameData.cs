@@ -6,14 +6,15 @@ using UnityEngine.Serialization;
 [Serializable]
 public class GameData
 {
-    public bool isGameDataExist;
-    [FormerlySerializedAs("experiencePoints")] public int exp;
+    public bool isGameDataExist; 
+    public int exp;
+    public int playerLevel;
     public int moneyBalance;
     public int currentHookIndex;
     public int currentRodIndex;
     public int currentBaitIndex;
 
-    public List<int> levelThresholds;
+    public int maxExp;
 
     
     //колличество минут прошедших в дне игрового времени, обнуляется каждый игровой день

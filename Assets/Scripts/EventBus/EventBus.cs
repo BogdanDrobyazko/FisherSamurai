@@ -20,10 +20,16 @@ public class EventBus : MonoBehaviour, IReadOnlyEventBus
     }
 
     public UnityEvent<int> OnExpChanged { get; } = new();
-    
-    public void TriggerExpChanged(int newAmount)
+
+    public void TriggerExpChanged(int currentExp)
     {
-        OnExpChanged?.Invoke(newAmount);
+        OnExpChanged?.Invoke(currentExp);
     }
+
+    public UnityEvent<int> OnLevelChanged { get; } = new();
     
+    public void TriggerLevelChanged(int newLevel)
+    {
+        OnLevelChanged?.Invoke(newLevel);
+    }
 }

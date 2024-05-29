@@ -3,7 +3,7 @@ guid: a26d1d5b04463054f8193504b47214af
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1000,8 +1000,8 @@ TextureImporter:
       name: "1_\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
       rect:
         serializedVersion: 2
-        x: 1745
-        y: 299
+        x: 1752
+        y: 295
         width: 293
         height: 293
       alignment: 0
@@ -1148,9 +1148,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1752
-        y: 3.4285583
-        width: 292.57144
-        height: 292.57144
+        y: 3
+        width: 293
+        height: 293
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

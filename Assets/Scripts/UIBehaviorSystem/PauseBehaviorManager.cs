@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class PauseBehaviorManager : MonoBehaviour
 {
     [SerializeField] private EventBus _eventBus;
+    
     [Header("Pause Field")] public Canvas pauseFieldCanvas;
     public GameDataSystem gameDataSystem;
     public GameObject fishesCollection;
@@ -16,6 +17,7 @@ public class PauseBehaviorManager : MonoBehaviour
     public TextMeshProUGUI time;
 
     [Header("Collection State")] public Canvas collectionCanvas;
+    public CollectionButtons collectionButtons;
     [SerializeField] private Scrollbar _collectionScrolbar;
 
 
@@ -76,6 +78,7 @@ public class PauseBehaviorManager : MonoBehaviour
         gameDataSystem.RefreshRenderedItems();
         
         _eventBus.TriggerMoneyBalanceChanged(gameDataSystem.GetMoneyBalance());
+        _eventBus.TriggerExpChanged(gameDataSystem.GetCurrentExp());
 
         _collectionScrolbar.value = 1;
     }

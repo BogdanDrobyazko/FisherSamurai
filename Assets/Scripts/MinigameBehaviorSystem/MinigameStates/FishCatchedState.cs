@@ -32,10 +32,11 @@ public class FishCatchedState : IMinigameState
         //int catchedWeight = Random.Range(_fish.maxWeight / 10, _fish.maxWeight);
         //float catchedPriceFloat = _fish.price * ((float) catchedWeight / (float) _fish.maxWeight);
         int catchedPrice = (int) _fish.rewardMoney;
+        int catchedExp = (int) _fish.rewardExp;
         char catchedRank = rankDictionary[Random.Range(0, 5)];
 
 
-        if (_fish.isCathed)
+        if (_fish.isCaught)
         {
             _manager.catchedFishCanvas.enabled = true;
 
@@ -81,6 +82,7 @@ public class FishCatchedState : IMinigameState
 
 
         _manager.gameDataSystem.IncreaseMoney(catchedPrice);
+        _manager.gameDataSystem.IncreaseExp(catchedExp);
 
 
         Debug.Log("Update Fish Catched state");

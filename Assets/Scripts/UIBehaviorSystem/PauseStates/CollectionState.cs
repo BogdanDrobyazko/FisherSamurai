@@ -20,22 +20,12 @@ public class CollectionState : IPauseState
         _manager.fishCanvas.enabled = false;
         _manager.lastPauseFieldState = this;
 
+        CollectionButtons collectionButtons = _manager.collectionButtons;
+
         for (int i = 0; i < _manager.gameDataSystem.GetAllFishesCount(); i++)
         {
-            Transform fishButton = _manager.fishesCollection.transform.GetChild(i).transform;
-
-            if (_manager.gameDataSystem.GetFishFromAll(i).isCathed)
-            {
-                fishButton.GetComponent<Button>().interactable = true;
-                fishButton.GetChild(0).transform.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-                fishButton.GetChild(1).transform.GetComponent<TextMeshProUGUI>().color = new Color(0, 0, 0, 1);
-            }
-            else
-            {
-                fishButton.GetComponent<Button>().interactable = false;
-                fishButton.GetChild(0).transform.GetComponent<Image>().color = new Color(1, 1, 1, 0.2f);
-                fishButton.GetChild(1).transform.GetComponent<TextMeshProUGUI>().color = new Color(0, 0, 0, 0.2f);
-            }
+            collectionButtons.SetImage(i, _manager.gameDataSystem.IsFishAvailable(i),
+                _manager.gameDataSystem.IsFishCaught(i));
         }
     }
 

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Kilosoft.Tools;
+using UnityEngine.Events;
 
 
 public class GameDataSystem : MonoBehaviour
 {
     [SerializeField] private EventBus _eventBus;
+    private readonly SaveDataSystem _saveDataSystem = new SaveDataSystem();
 
     [SerializeField] private GameData _currentGameData;
     [SerializeField] private GameData _baseGameData;
@@ -18,7 +20,6 @@ public class GameDataSystem : MonoBehaviour
     [SerializeField] private GameObject _enviromentRod;
     [SerializeField] private GameObject _enviromentHook;
     [SerializeField] private int _maxFrameRate = 60;
-    private readonly SaveDataSystem _saveDataSystem = new SaveDataSystem();
 
     private float realSecondsLast;
 
@@ -35,8 +36,9 @@ public class GameDataSystem : MonoBehaviour
         }
 
         RefreshRenderedItems();
-    }
 
+        _eventBus.GetComponent<IReadOnlyEventBus>().OnLevelChanged.AddListener(OnLevelChanged);
+    }
 
     private void Update()
     {
@@ -65,7 +67,7 @@ public class GameDataSystem : MonoBehaviour
     {
         foreach (var fish in _currentGameData.fishDatas)
         {
-            fish.isCathed = true;
+            fish.isCaught = true;
         }
 
         foreach (var hook in _currentGameData.hookDatas)
@@ -121,20 +123,7 @@ public class GameDataSystem : MonoBehaviour
     {
         Application.targetFrameRate = _maxFrameRate;
     }
-    
-    [EditorButton("Fill level thresholds")]
-    public void fillThresholds()
-    {
-        int previousLevelThreshold = 0;
-        for (int i = 0; i < 13; i++)
-        {
-            _currentGameData.levelThresholds[i] = previousLevelThreshold + (int)(100 * (float)Math.Pow(1.2, i));
-            //округлим до десятков
-            _currentGameData.levelThresholds[i] = (_currentGameData.levelThresholds[i] / 10) * 10;
-            previousLevelThreshold = _currentGameData.levelThresholds[i];
-        }
-        
-    }
+
 
     public void ClearGameData()
     {
@@ -150,6 +139,7 @@ public class GameDataSystem : MonoBehaviour
         RefreshRenderedItems();
         _eventBus.TriggerMoneyBalanceChanged(GetMoneyBalance());
     }
+
 
     public int GetMoneyBalance() => _currentGameData.moneyBalance;
 
@@ -182,11 +172,30 @@ public class GameDataSystem : MonoBehaviour
         _eventBus.TriggerMoneyBalanceChanged(targetMoneyAmount);
     }
 
+    public void IncreaseExp(int operationExp)
+    {
+        int currentExp = _currentGameData.exp;
+        int targetExp = currentExp + operationExp;
+
+        if (targetExp > _currentGameData.maxExp)
+        {
+            targetExp =  _currentGameData.maxExp;
+        }
+
+        _currentGameData.exp = targetExp;
+        _eventBus.TriggerExpChanged(targetExp);
+    }
+
+
+    public int GetCurrentExp() => _currentGameData.exp;
+    public int GetCurrentMaxExp() => _currentGameData.maxExp;
+    public int GetPlayerLevel() => _currentGameData.playerLevel;
+
     public int GetCurrentGameDayTimeInMinuties() => _currentGameData.gameDayTimeInMinutes;
     public FishData GetFishFromAll(int index) => _currentGameData.fishDatas[index];
     public Sprite GetFishSpriteFromAll(int index) => _fishSprites[index];
     public List<FishData> GetAllFishesData() => _currentGameData.fishDatas;
-    
+
     /// <summary>
     /// Returns the count of all fishes in the current game data.
     /// </summary>
@@ -196,6 +205,11 @@ public class GameDataSystem : MonoBehaviour
         return _currentGameData.fishDatas.Count;
     }
 
+
+    public bool IsFishAvailable(int fishID) => GetPlayerLevel() >= _currentGameData.fishDatas[fishID].level;
+
+    public bool IsFishCaught(int fishID) => _currentGameData.fishDatas[fishID].isCaught;
+
     public void RefreshFishRecord(int fishID, char newBestRank, int newBesPrice)
     {
         if (_currentGameData.fishDatas[fishID].bestRank < newBestRank)
@@ -204,8 +218,9 @@ public class GameDataSystem : MonoBehaviour
         if (_currentGameData.fishDatas[fishID].recordReward < newBesPrice)
             _currentGameData.fishDatas[fishID].recordReward = newBesPrice;
 
-        _currentGameData.fishDatas[fishID].isCathed = true;
+        _currentGameData.fishDatas[fishID].isCaught = true;
     }
+
 
     public List<RodData> GetAllRodsData() => _currentGameData.rodDatas;
     public List<BaitData> GetAllBaitsData() => _currentGameData.baitDatas;
@@ -324,4 +339,6 @@ public class GameDataSystem : MonoBehaviour
     {
         _currentGameData.currentRodIndex = index;
     }
+
+    private void OnLevelChanged(int newLevel) => _currentGameData.playerLevel = newLevel;
 }
