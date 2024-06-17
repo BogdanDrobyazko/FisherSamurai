@@ -87,6 +87,7 @@ public class GameDataSystem : MonoBehaviour
         }
 
         IncreaseMoney(999999999);
+        IncreaseExp(999999999);
         SaveGameData();
     }
 
@@ -206,7 +207,7 @@ public class GameDataSystem : MonoBehaviour
     }
 
 
-    public bool IsFishAvailable(int fishID) => GetPlayerLevel() >= _currentGameData.fishDatas[fishID].level;
+    public bool IsFishAvailable(int fishID) => GetPlayerLevel() >= _currentGameData.fishDatas[fishID].level ;
 
     public bool IsFishCaught(int fishID) => _currentGameData.fishDatas[fishID].isCaught;
 

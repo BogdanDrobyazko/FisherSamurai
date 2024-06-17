@@ -21,31 +21,30 @@ public class CollectionButtons : MonoBehaviour
 
     public void SetImage(int buttonIndex, bool isAvailable, bool isСaught)
     {
-        if (buttonIndex < _childsCount || buttonIndex >= 0)
+        if (buttonIndex >= _childsCount && buttonIndex < 0) return;
+        
+        Image fishImage = transform.GetChild(buttonIndex).transform.GetChild(0).GetComponent<Image>();
+        Button fishButton = transform.GetChild(buttonIndex).GetComponent<Button>();
+        if (isAvailable)
         {
-            Image fishImage = transform.GetChild(buttonIndex).transform.GetChild(0).GetComponent<Image>();
-            Button fishButton = transform.GetChild(buttonIndex).GetComponent<Button>();
-            if (isAvailable)
+            if (isСaught)
             {
-                if (isСaught)
-                {
-                    fishImage.sprite = _fishSprites[buttonIndex]; 
-                    fishImage.color = new Color(1, 1, 1, 1);
-                    fishButton.interactable = true;
-                }
-                else
-                {
-                    fishImage.sprite = _fishSpritesShadowed[buttonIndex];
-                    fishImage.color = new Color(1, 1, 1, 0.2f);
-                    fishButton.interactable = false;
-                }
+                fishImage.sprite = _fishSprites[buttonIndex]; 
+                fishImage.color = new Color(1, 1, 1, 1);
+                fishButton.interactable = true;
             }
             else
             {
-                fishImage.sprite = _notAvailableFishSprite;
+                fishImage.sprite = _fishSpritesShadowed[buttonIndex];
                 fishImage.color = new Color(1, 1, 1, 0.2f);
                 fishButton.interactable = false;
             }
+        }
+        else
+        {
+            fishImage.sprite = _notAvailableFishSprite;
+            fishImage.color = new Color(1, 1, 1, 0.2f);
+            fishButton.interactable = false;
         }
     }
 

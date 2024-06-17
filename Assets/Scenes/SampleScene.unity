@@ -4001,81 +4001,6 @@ Transform:
   - {fileID: 1348376665}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &286398452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 286398453}
-  - component: {fileID: 286398455}
-  - component: {fileID: 286398454}
-  m_Layer: 5
-  m_Name: BG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &286398453
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286398452}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 918132991}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 294.755, y: 15.865}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &286398454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286398452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1599891349, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &286398455
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286398452}
-  m_CullTransparentMesh: 1
 --- !u!1 &292403809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,7 +4284,6 @@ RectTransform:
   - {fileID: 517139356}
   - {fileID: 412022672}
   - {fileID: 1330062248}
-  - {fileID: 1806498978}
   m_Father: {fileID: 1256525703}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4817,6 +4741,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324763091}
+  m_CullTransparentMesh: 1
+--- !u!1 &329894793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329894794}
+  - component: {fileID: 329894796}
+  - component: {fileID: 329894795}
+  m_Layer: 5
+  m_Name: LevelText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &329894794
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329894793}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1245354263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.4, y: -1.3}
+  m_SizeDelta: {x: 26.405, y: 29.88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &329894795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329894793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 12
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4113106438
+  m_fontColor: {r: 0.023529412, g: 0.023529412, b: 0.16078432, a: 0.9607843}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 39.45
+  m_fontSizeBase: 45
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 45
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &329894796
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329894793}
   m_CullTransparentMesh: 1
 --- !u!1 &331596897
 GameObject:
@@ -5605,7 +5663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 379501374}
-  - component: {fileID: 379501375}
+  - component: {fileID: 379501376}
   m_Layer: 0
   m_Name: FishingPrepareSystem
   m_TagString: Untagged
@@ -5628,7 +5686,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 498079032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &379501375
+--- !u!114 &379501376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5637,14 +5695,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 379501373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c76bce13664786890e9a9593cb556a, type: 3}
+  m_Script: {fileID: 11500000, guid: efe264e5f9116504cafe6df9bbf6cdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameDataSystem: {fileID: 498079033}
-  _currentProbabilities: []
-  _availableFishes: []
-  _currentHour: 0
-  _updateTime: 0
 --- !u!1 &383831549
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +5833,7 @@ MonoBehaviour:
   - {fileID: 1555785218}
   - {fileID: 1079448061}
   - {fileID: 530198208}
+  - {fileID: 1102551566}
   _switchScaleModeBorder: 0.77
   _containSizeStart: 0.89
   _containSizeEnd: 0.9
@@ -7747,6 +7801,7 @@ MonoBehaviour:
   _currentGameData:
     isGameDataExist: 1
     exp: 0
+    playerLevel: 0
     moneyBalance: 0
     currentHookIndex: 0
     currentRodIndex: 0
@@ -7758,44 +7813,44 @@ MonoBehaviour:
       title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430 "
       description: "\u0410\u0443\u0447!"
       rewardMoney: 15
-      rewardExp: 0
-      level: 1
-      catchStartHour: 0
-      catchEndHour: 0
-      isCathed: 0
+      rewardExp: 30
+      level: 0
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 1
       title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
       description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
       rewardMoney: 20
-      rewardExp: 0
-      level: 1
-      catchStartHour: 2
-      catchEndHour: 2
-      isCathed: 0
+      rewardExp: 30
+      level: 0
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 2
       title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437 "
       description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
       rewardMoney: 25
-      rewardExp: 0
-      level: 1
-      catchStartHour: 3
-      catchEndHour: 3
-      isCathed: 0
+      rewardExp: 30
+      level: 0
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 3
       title: "\u0427\u0443\u043C\u0430\u0437\u0443\u0441"
       description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
       rewardMoney: 30
-      rewardExp: 0
-      level: 1
-      catchStartHour: 1
-      catchEndHour: 1
-      isCathed: 0
+      rewardExp: 30
+      level: 0
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 4
@@ -7803,23 +7858,23 @@ MonoBehaviour:
       description: "\u0427\u0442\u043E \u0432 \u043B\u043E\u0431, \u0447\u0442\u043E
         \u043F\u043E \u043B\u0431\u0443\u2026"
       rewardMoney: 35
-      rewardExp: 0
-      level: 2
-      catchStartHour: 17
-      catchEndHour: 17
-      isCathed: 0
+      rewardExp: 38
+      level: 1
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 5
-      title: "\u0420\u0430\u043A\u0443\u0448\u043D\u0438\u043A "
+      title: "\u0420\u0430\u043A\u0443\u0448\u0435\u043B\u044C\u043D\u0438\u043A"
       description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
         \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
       rewardMoney: 40
-      rewardExp: 0
-      level: 2
-      catchStartHour: 11
+      rewardExp: 38
+      level: 1
+      catchStartHour: 2
       catchEndHour: 11
-      isCathed: 0
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 6
@@ -7827,22 +7882,22 @@ MonoBehaviour:
       description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
         \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
       rewardMoney: 45
-      rewardExp: 0
-      level: 2
-      catchStartHour: 15
-      catchEndHour: 15
-      isCathed: 0
+      rewardExp: 38
+      level: 1
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 7
       title: "\u0421\u0438\u043D\u0435\u0445\u0432\u043E\u0441\u0442 "
       description: "\u042B\u044B\u043A\u2026"
       rewardMoney: 50
-      rewardExp: 0
-      level: 2
-      catchStartHour: 12
-      catchEndHour: 12
-      isCathed: 0
+      rewardExp: 38
+      level: 1
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 8
@@ -7850,44 +7905,44 @@ MonoBehaviour:
       description: "\u041D\u0435 \u043F\u0440\u0438\u043D\u044F\u043B \u0441\u0435\u0431\u044F,
         \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
       rewardMoney: 50
-      rewardExp: 0
-      level: 3
-      catchStartHour: 20
-      catchEndHour: 20
-      isCathed: 0
+      rewardExp: 46
+      level: 2
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 9
       title: "\u042F\u0433\u043E\u0440\u044C "
       description: "\u041E\u043F\u044F\u0442\u044C \u043F\u0440\u0438\u0446\u0435\u043F\u0438\u043B\u0441\u044F"
       rewardMoney: 60
-      rewardExp: 0
-      level: 3
-      catchStartHour: 10
-      catchEndHour: 10
-      isCathed: 0
+      rewardExp: 46
+      level: 2
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 10
       title: "\u0426\u0432\u0435\u0442\u0438\u043A "
       description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
       rewardMoney: 60
-      rewardExp: 0
-      level: 3
-      catchStartHour: 7
-      catchEndHour: 7
-      isCathed: 0
+      rewardExp: 46
+      level: 2
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 11
       title: "\u041B\u0443\u043D\u043A\u0430 "
       description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
       rewardMoney: 65
-      rewardExp: 0
-      level: 3
-      catchStartHour: 8
-      catchEndHour: 8
-      isCathed: 0
+      rewardExp: 46
+      level: 2
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 12
@@ -7895,22 +7950,22 @@ MonoBehaviour:
       description: "\u0414\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u043D\u0435 \u0440\u0430\u0441\u043A\u043E\u043B\u0435\u0442\u0441\u044F"
       rewardMoney: 65
-      rewardExp: 0
-      level: 4
-      catchStartHour: 18
-      catchEndHour: 18
-      isCathed: 0
+      rewardExp: 54
+      level: 3
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 13
       title: "\u041C\u0435\u0433\u0430\u043B\u0430\u0434\u043E\u043D\u044C "
       description: "\u0414\u0430\u0439 \u043F\u044F\u0442\u044C!"
       rewardMoney: 75
-      rewardExp: 0
-      level: 4
-      catchStartHour: 5
-      catchEndHour: 5
-      isCathed: 0
+      rewardExp: 54
+      level: 3
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 14
@@ -7919,11 +7974,11 @@ MonoBehaviour:
         \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
         \u0442\u0435\u0431\u044F!"
       rewardMoney: 75
-      rewardExp: 0
-      level: 4
-      catchStartHour: 23
-      catchEndHour: 23
-      isCathed: 0
+      rewardExp: 54
+      level: 3
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 15
@@ -7931,44 +7986,44 @@ MonoBehaviour:
       description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
         \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
       rewardMoney: 85
-      rewardExp: 0
-      level: 4
-      catchStartHour: 4
-      catchEndHour: 4
-      isCathed: 0
+      rewardExp: 54
+      level: 3
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 16
       title: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u0447\u0435\u0448\u0443\u0439\u043A\u0430"
       description: "\u0421\u043A\u0430\u0437\u043E\u0447\u043D\u0430\u044F \u0448\u043A\u0443\u0440\u0430"
       rewardMoney: 90
-      rewardExp: 0
-      level: 5
-      catchStartHour: 22
-      catchEndHour: 23
-      isCathed: 0
+      rewardExp: 62
+      level: 4
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 17
       title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442 "
       description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
       rewardMoney: 95
-      rewardExp: 0
-      level: 5
-      catchStartHour: 10
-      catchEndHour: 11
-      isCathed: 0
+      rewardExp: 62
+      level: 4
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 18
       title: "\u0426\u0438\u043A\u043B\u043E\u043F\u0438\u044F"
       description: "\u041F\u043E\u0434\u0432\u043E\u0434\u043D\u0430\u044F \u043F\u0438\u0440\u0430\u0442\u043A\u0430"
       rewardMoney: 100
-      rewardExp: 0
-      level: 5
-      catchStartHour: 0
-      catchEndHour: 5
-      isCathed: 0
+      rewardExp: 62
+      level: 4
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 19
@@ -7977,11 +8032,11 @@ MonoBehaviour:
         \u0437\u0430\u0447\u0435\u043C \u0435\u043C\u0443 \u0441\u0442\u043E\u043B\u044C\u043A\u043E
         \u043B\u0430\u043F"
       rewardMoney: 100
-      rewardExp: 0
-      level: 5
+      rewardExp: 62
+      level: 4
       catchStartHour: 0
-      catchEndHour: 1
-      isCathed: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 20
@@ -7989,11 +8044,11 @@ MonoBehaviour:
       description: "-\u0414\u0430, \u044F \u0433\u043E\u0440\u044E. \u0422\u0435\u0431\u0435
         \u043A\u0430\u043A\u043E\u0435 \u0434\u0435\u043B\u043E?"
       rewardMoney: 100
-      rewardExp: 0
-      level: 6
-      catchStartHour: 12
-      catchEndHour: 14
-      isCathed: 0
+      rewardExp: 70
+      level: 5
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 21
@@ -8001,11 +8056,11 @@ MonoBehaviour:
       description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
         \u0432\u0438\u0434\u0430"
       rewardMoney: 100
-      rewardExp: 0
-      level: 6
-      catchStartHour: 6
-      catchEndHour: 6
-      isCathed: 0
+      rewardExp: 70
+      level: 5
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 22
@@ -8013,11 +8068,11 @@ MonoBehaviour:
       description: "\u0417\u0430\u0447\u0435\u043C \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
         \u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u043D\u0435\u043F\u043B\u043E\u0445\u043E"
       rewardMoney: 110
-      rewardExp: 0
-      level: 6
-      catchStartHour: 12
-      catchEndHour: 13
-      isCathed: 0
+      rewardExp: 70
+      level: 5
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 23
@@ -8025,11 +8080,11 @@ MonoBehaviour:
       description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
         \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
       rewardMoney: 110
-      rewardExp: 0
-      level: 6
-      catchStartHour: 18
-      catchEndHour: 19
-      isCathed: 0
+      rewardExp: 70
+      level: 5
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 24
@@ -8038,793 +8093,79 @@ MonoBehaviour:
         \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043B\u044E\u0431\u0432\u0438
         \u043C\u0430\u0442\u0435\u0440\u0438"
       rewardMoney: 110
-      rewardExp: 0
-      level: 7
-      catchStartHour: 13
-      catchEndHour: 13
-      isCathed: 0
+      rewardExp: 78
+      level: 6
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 25
       title: "\u0418\u0441\u0443\u0441\u0438\u0443\u0441"
       description: "\u0425\u043E\u0434\u0438\u0442 \u043F\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0443"
       rewardMoney: 110
-      rewardExp: 0
-      level: 7
-      catchStartHour: 20
-      catchEndHour: 21
-      isCathed: 0
+      rewardExp: 78
+      level: 6
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 26
-      title: "\u0429\u0451\u043B\u043A\u0443\u043D\u044C"
+      title: "\u0429\u0435\u043B\u043A\u0443\u043D\u044C"
       description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
         \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
       rewardMoney: 125
-      rewardExp: 0
-      level: 7
-      catchStartHour: 14
-      catchEndHour: 14
-      isCathed: 0
+      rewardExp: 78
+      level: 6
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 27
       title: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
       description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
       rewardMoney: 125
-      rewardExp: 0
-      level: 7
-      catchStartHour: 4
-      catchEndHour: 5
-      isCathed: 0
+      rewardExp: 78
+      level: 6
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 28
       title: "\u0414\u0443\u0440\u043C\u0430\u043D\u0431\u0430\u043B\u0430"
       description: "\u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444, \u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444"
       rewardMoney: 125
-      rewardExp: 0
-      level: 8
-      catchStartHour: 9
-      catchEndHour: 9
-      isCathed: 0
+      rewardExp: 86
+      level: 7
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 29
       title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u043A\u0442\u043E\u0440"
       description: "\u0412\u044B\u043B\u0435\u0447\u0438\u0442 \u0438 \u0438\u0437\u0443\u0432\u0435\u0447\u0438\u0442"
       rewardMoney: 125
-      rewardExp: 0
-      level: 8
-      catchStartHour: 21
-      catchEndHour: 21
-      isCathed: 0
+      rewardExp: 86
+      level: 7
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 30
       title: "\u041C\u043E\u0440\u0441\u043A\u043E\u0439 \u043A\u043E\u0442\u0438\u043A"
       description: "\u041D\u0443 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C
-        \u041C\u044F\u0443 "
-      rewardMoney: 150
-      rewardExp: 0
-      level: 8
-      catchStartHour: 6
-      catchEndHour: 8
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 31
-      title: "\u0410\u0431\u043E\u043C\u0431\u0430"
-      description: "\u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u2026"
-      rewardMoney: 150
-      rewardExp: 0
-      level: 8
-      catchStartHour: 18
-      catchEndHour: 20
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 32
-      title: "\u0428\u043F\u0438\u0443\u043D\u044C"
-      description: "\u0411\u0443\u043B\u044C\u043A. \u0414\u0436\u0435\u0439\u043C\u0441
-        \u0411\u0443\u043B\u044C\u043A."
-      rewardMoney: 150
-      rewardExp: 0
-      level: 9
-      catchStartHour: 16
-      catchEndHour: 17
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 33
-      title: "\u041C\u0430\u0440\u043B\u0438\u043D \u0411\u0440\u0430\u043D\u0434\u043E  "
-      description: "\u0422\u044B \u043B\u043E\u0432\u0438\u0448\u044C \u043C\u0435\u043D\u044F,
-        \u043D\u043E \u0434\u0435\u043B\u0430\u0435\u0448\u044C \u044D\u0442\u043E
-        \u0431\u0435\u0437 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F\u2026"
-      rewardMoney: 150
-      rewardExp: 0
-      level: 9
-      catchStartHour: 0
-      catchEndHour: 2
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 34
-      title: "\u0416\u0435\u043C\u0447\u0443\u0436\u0438\u043D\u043A\u0430"
-      description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
-      rewardMoney: 200
-      rewardExp: 0
-      level: 9
-      catchStartHour: 9
-      catchEndHour: 11
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 35
-      title: "\u0411\u0440\u0438\u043B\u044C\u044F\u043D\u044C\u044F"
-      description: "\u0418 \u043A\u0430\u043A \u0435\u0451 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
-        ?"
-      rewardMoney: 200
-      rewardExp: 0
-      level: 9
-      catchStartHour: 15
-      catchEndHour: 17
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 36
-      title: "\u041A\u0440\u043E\u043A\u043E\u0434\u0443\u043F\u043F\u0438"
-      description: "\u0421\u0432\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0447\u0443\u0436\u0438\u0445,
-        \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
-      rewardMoney: 250
-      rewardExp: 0
-      level: 10
-      catchStartHour: 16
-      catchEndHour: 16
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 37
-      title: "\u0410\u043A\u0443\u043B\u044F\u0441\u043A\u0430 "
-      description: "\u0425\u043E\u043B\u043E\u0434\u043D\u0430\u044F \u0438 \u0433\u0440\u0443\u0441\u0442\u043D\u0430\u044F
-        \u0440\u044B\u0431\u0430"
-      rewardMoney: 250
-      rewardExp: 0
-      level: 10
-      catchStartHour: 22
-      catchEndHour: 22
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 38
-      title: "\u0417\u043E\u043B\u043E\u0442\u043E\u0440\u0443\u043D\u043A\u0430"
-      description: "\u041D\u0435\u0434\u043E\u043B\u044E\u0431\u043B\u0438\u0432\u0430\u0435\u0442
-        \u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0442\u0440\u043E\u0441\u043E\u0432..."
-      rewardMoney: 250
-      rewardExp: 0
-      level: 10
-      catchStartHour: 3
-      catchEndHour: 5
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 39
-      title: "\u0411\u044B\u0447\u043E\u043A"
-      description: "\u0414\u043E\u0441\u0442\u0430\u043B \u0432\u0441\u0435\u0445
-        \u043A\u0440\u0430\u0441\u043D\u044B\u0445 \u0440\u044B\u0431"
-      rewardMoney: 350
-      rewardExp: 0
-      level: 10
-      catchStartHour: 2
-      catchEndHour: 3
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 40
-      title: "\u0428\u0443\u0442\u043E\u0431\u043B\u0430 "
-      description: "\u0423 \u0432\u0430\u0441 \u0431\u044B\u0432\u0430\u043B\u043E
-        \u0442\u0430\u043A\u043E\u0435, \u043F\u043B\u044B\u0432\u0435\u0442\u0435
-        \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
-      rewardMoney: 350
-      rewardExp: 0
-      level: 11
-      catchStartHour: 19
-      catchEndHour: 19
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 41
-      title: "\u041C\u0435\u0434\u0432\u0435\u0436\u0430\u0442\u043D\u0438\u043A "
-      description: "\u041D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0435\u0433\u043E
-        \u0432 \u0441\u0435\u0439\u0444\u0435"
-      rewardMoney: 350
-      rewardExp: 0
-      level: 11
-      catchStartHour: 14
-      catchEndHour: 15
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 42
-      title: "\u041E\u0440\u0430\u043D\u0433\u0443\u0442\u0430\u0439"
-      description: "\u041B\u044E\u0431\u0438\u0442 \u043C\u043E\u0440\u0441\u043A\u0438\u0435
-        \u0431\u0430\u043D\u0430\u043D\u044B"
-      rewardMoney: 500
-      rewardExp: 0
-      level: 11
-      catchStartHour: 6
-      catchEndHour: 7
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 43
-      title: "\u0422\u0438\u0433\u0440\u043E\u043D"
-      description: "\u0423\u043F\u043B\u044B\u043B \u0438\u0437 \u0446\u0438\u0440\u043A\u0430\u2026"
-      rewardMoney: 500
-      rewardExp: 0
-      level: 11
-      catchStartHour: 8
-      catchEndHour: 9
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 44
-      title: "\u041D\u0435\u0432\u0435\u0434\u0438\u043C\u0431\u0440\u0438\u044F"
-      description: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0432\u044B\u0440\u043E\u043D\u0438\u0442\u044C"
-      rewardMoney: 1000
-      rewardExp: 0
-      level: 12
-      catchStartHour: 21
-      catchEndHour: 23
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 45
-      title: "\u0424\u0435\u043D\u0438\u043A\u0441\u043E\u043C "
-      description: "\u041D\u0438\u043A\u0430\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
-        \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
-      rewardMoney: 1000
-      rewardExp: 0
-      level: 12
-      catchStartHour: 12
-      catchEndHour: 17
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 46
-      title: "\u0425\u0438\u043C\u0435\u0440\u044B\u0447"
-      description: "\u0414\u0443\u043C\u0430\u0435\u0442 \u043E\u043D \u043B\u0435\u0432,
-        \u0430 \u043F\u043E \u0441\u0443\u0442\u0438 \u0442\u043E\u0442 \u0435\u0449\u0451
-        \u0437\u043C\u0435\u0439"
-      rewardMoney: 1250
-      rewardExp: 0
-      level: 12
-      catchStartHour: 6
-      catchEndHour: 11
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 47
-      title: "\u0415\u0434\u0438\u043D\u043E\u0440\u044B\u0431 "
-      description: "\u041B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0435
-        \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
-      rewardMoney: 1500
-      rewardExp: 0
-      level: 12
-      catchStartHour: 18
-      catchEndHour: 23
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 48
-      title: "\u0428\u043B\u0430\u043A\u043E\u0431\u043B\u043E\u043A\u0443\u043D\u044C"
-      description: "\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u044D\u0442\u043E\u0433\u043E
-        \u043C\u0438\u0440\u0430"
-      rewardMoney: 5000
-      rewardExp: 0
-      level: 13
-      catchStartHour: 0
-      catchEndHour: 23
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    hookDatas:
-    - itemID: 0
-      itemTitle: "\u0414\u0435\u0440\u0435\u0432\u044F\u043D\u043D\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
-      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
-        30"
-      itemPrice: 0
-      hookSize: 3
-      isItemBuyed: 1
-      isItemEquipped: 1
-      isItemMultiplable: 0
-    - itemID: 1
-      itemTitle: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
-      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
-        40"
-      itemPrice: 2500
-      hookSize: 4
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    - itemID: 2
-      itemTitle: "\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439
-        \u043A\u0440\u044E\u0447\u043E\u043A"
-      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
-        50"
-      itemPrice: 25000
-      hookSize: 5
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    - itemID: 3
-      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
-      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
-        60"
-      itemPrice: 250000
-      hookSize: 6
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    rodDatas:
-    - itemID: 0
-      itemTitle: "\u0412\u0435\u0442\u043A\u0430"
-      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
-        40"
-      itemPrice: 0
-      progressForce: 1
-      isItemBuyed: 1
-      isItemEquipped: 1
-      isItemMultiplable: 0
-    - itemID: 1
-      itemTitle: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u0430\u044F \u0443\u0434\u043E\u0447\u043A\u0430"
-      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
-        60"
-      itemPrice: 10000
-      progressForce: 2
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    - itemID: 2
-      itemTitle: "\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0430\u044F
-        \u0443\u0434\u043E\u0447\u043A\u0430"
-      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
-        80"
-      itemPrice: 100000
-      progressForce: 3
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    - itemID: 3
-      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0443\u0434\u043E\u0447\u043A\u0430"
-      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
-        100"
-      itemPrice: 1000000
-      progressForce: 4
-      isItemBuyed: 0
-      isItemEquipped: 0
-      isItemMultiplable: 0
-    baitDatas:
-    - itemID: 0
-      itemTitle: "\u0420\u0438\u0441"
-      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
-        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
-        C \u0440\u0430\u043D\u0433\u0430"
-      itemPrice: 100
-      isItemBuyed: 0
-      isItemEquipped: 0
-      baitsCount: 0
-      isItemMultiplable: 1
-      typeOfFishToImprovement: 1
-    - itemID: 1
-      itemTitle: "\u0427\u0435\u0440\u0432\u044F\u043A\u0438"
-      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
-        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
-        B \u0440\u0430\u043D\u0433\u0430"
-      itemPrice: 1000
-      isItemBuyed: 0
-      isItemEquipped: 0
-      baitsCount: 0
-      isItemMultiplable: 1
-      typeOfFishToImprovement: 2
-    - itemID: 2
-      itemTitle: "\u041C\u0430\u043B\u044C\u043A\u0438"
-      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
-        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
-        A \u0440\u0430\u043D\u0433\u0430"
-      itemPrice: 10000
-      isItemBuyed: 0
-      isItemEquipped: 0
-      baitsCount: 0
-      isItemMultiplable: 1
-      typeOfFishToImprovement: 3
-    - itemID: 3
-      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0431\u043B\u0435\u0441\u043D\u0430"
-      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
-        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
-        S \u0440\u0430\u043D\u0433\u0430"
-      itemPrice: 100000
-      isItemBuyed: 0
-      isItemEquipped: 0
-      baitsCount: 0
-      isItemMultiplable: 1
-      typeOfFishToImprovement: 4
-    - itemID: 4
-      itemTitle: "\u0411\u0435\u0437 \u043D\u0430\u0436\u0438\u0432\u043A\u0438"
-      itemDescription: 
-      itemPrice: 0
-      isItemBuyed: 1
-      isItemEquipped: 1
-      baitsCount: 0
-      isItemMultiplable: 1
-      typeOfFishToImprovement: 0
-  _baseGameData:
-    isGameDataExist: 0
-    exp: 0
-    moneyBalance: 0
-    currentHookIndex: 0
-    currentRodIndex: 0
-    currentBaitIndex: 4
-    maxExp: 22400
-    gameDayTimeInMinutes: 720
-    fishDatas:
-    - id: 0
-      title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430 "
-      description: "\u0410\u0443\u0447!"
-      rewardMoney: 15
-      rewardExp: 30
-      level: 1
-      catchStartHour: 0
-      catchEndHour: 0
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 1
-      title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
-      description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
-      rewardMoney: 20
-      rewardExp: 30
-      level: 1
-      catchStartHour: 2
-      catchEndHour: 2
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 2
-      title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437 "
-      description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
-      rewardMoney: 25
-      rewardExp: 30
-      level: 1
-      catchStartHour: 3
-      catchEndHour: 3
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 3
-      title: "\u0427\u0443\u043C\u0430\u0437\u0443\u0441"
-      description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
-      rewardMoney: 30
-      rewardExp: 30
-      level: 1
-      catchStartHour: 1
-      catchEndHour: 1
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 4
-      title: "\u0423\u0437\u043A\u043E\u043B\u043E\u0431\u0438\u043A"
-      description: "\u0427\u0442\u043E \u0432 \u043B\u043E\u0431, \u0447\u0442\u043E
-        \u043F\u043E \u043B\u0431\u0443\u2026"
-      rewardMoney: 35
-      rewardExp: 38
-      level: 2
-      catchStartHour: 17
-      catchEndHour: 17
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 5
-      title: "\u0420\u0430\u043A\u0443\u0448\u043D\u0438\u043A "
-      description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
-        \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
-      rewardMoney: 40
-      rewardExp: 38
-      level: 2
-      catchStartHour: 11
-      catchEndHour: 11
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 6
-      title: "\u041E\u0441\u043C\u0438\u043D\u043E\u0433\u0430 "
-      description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
-        \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
-      rewardMoney: 45
-      rewardExp: 38
-      level: 2
-      catchStartHour: 15
-      catchEndHour: 15
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 7
-      title: "\u0421\u0438\u043D\u0435\u0445\u0432\u043E\u0441\u0442 "
-      description: "\u042B\u044B\u043A\u2026"
-      rewardMoney: 50
-      rewardExp: 38
-      level: 2
-      catchStartHour: 12
-      catchEndHour: 12
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 8
-      title: "\u0401\u0436\u0438\u0440\u043A"
-      description: "\u041D\u0435 \u043F\u0440\u0438\u043D\u044F\u043B \u0441\u0435\u0431\u044F,
-        \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
-      rewardMoney: 50
-      rewardExp: 46
-      level: 3
-      catchStartHour: 20
-      catchEndHour: 20
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 9
-      title: "\u042F\u0433\u043E\u0440\u044C "
-      description: "\u041E\u043F\u044F\u0442\u044C \u043F\u0440\u0438\u0446\u0435\u043F\u0438\u043B\u0441\u044F"
-      rewardMoney: 60
-      rewardExp: 46
-      level: 3
-      catchStartHour: 10
-      catchEndHour: 10
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 10
-      title: "\u0426\u0432\u0435\u0442\u0438\u043A "
-      description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
-      rewardMoney: 60
-      rewardExp: 46
-      level: 3
-      catchStartHour: 7
-      catchEndHour: 7
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 11
-      title: "\u041B\u0443\u043D\u043A\u0430 "
-      description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
-      rewardMoney: 65
-      rewardExp: 46
-      level: 3
-      catchStartHour: 8
-      catchEndHour: 8
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 12
-      title: "\u041E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044C "
-      description: "\u0414\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u043E
-        \u043D\u0435 \u0440\u0430\u0441\u043A\u043E\u043B\u0435\u0442\u0441\u044F"
-      rewardMoney: 65
-      rewardExp: 54
-      level: 4
-      catchStartHour: 18
-      catchEndHour: 18
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 13
-      title: "\u041C\u0435\u0433\u0430\u043B\u0430\u0434\u043E\u043D\u044C "
-      description: "\u0414\u0430\u0439 \u043F\u044F\u0442\u044C!"
-      rewardMoney: 75
-      rewardExp: 54
-      level: 4
-      catchStartHour: 5
-      catchEndHour: 5
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 14
-      title: "\u0423\u0434\u043E\u0447\u043D\u0438\u043A "
-      description: "\u0422\u044B \u0434\u0443\u043C\u0430\u043B \u0442\u044B \u043F\u043E\u0439\u043C\u0430\u043B
-        \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
-        \u0442\u0435\u0431\u044F!"
-      rewardMoney: 75
-      rewardExp: 54
-      level: 4
-      catchStartHour: 23
-      catchEndHour: 23
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 15
-      title: "\u0413\u0440\u043E\u0437\u043D\u0438\u043A "
-      description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
-        \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
-      rewardMoney: 85
-      rewardExp: 54
-      level: 4
-      catchStartHour: 4
-      catchEndHour: 4
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 16
-      title: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u0447\u0435\u0448\u0443\u0439\u043A\u0430"
-      description: "\u0421\u043A\u0430\u0437\u043E\u0447\u043D\u0430\u044F \u0448\u043A\u0443\u0440\u0430"
-      rewardMoney: 90
-      rewardExp: 62
-      level: 5
-      catchStartHour: 22
-      catchEndHour: 23
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 17
-      title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442 "
-      description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
-      rewardMoney: 95
-      rewardExp: 62
-      level: 5
-      catchStartHour: 10
-      catchEndHour: 11
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 18
-      title: "\u0426\u0438\u043A\u043B\u043E\u043F\u0438\u044F"
-      description: "\u041F\u043E\u0434\u0432\u043E\u0434\u043D\u0430\u044F \u043F\u0438\u0440\u0430\u0442\u043A\u0430"
-      rewardMoney: 100
-      rewardExp: 62
-      level: 5
-      catchStartHour: 0
-      catchEndHour: 5
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 19
-      title: "\u041F\u0430\u0443\u043A\u0430\u0440\u0430\u0441\u044C"
-      description: "\u041D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0442,
-        \u0437\u0430\u0447\u0435\u043C \u0435\u043C\u0443 \u0441\u0442\u043E\u043B\u044C\u043A\u043E
-        \u043B\u0430\u043F"
-      rewardMoney: 100
-      rewardExp: 62
-      level: 5
-      catchStartHour: 0
-      catchEndHour: 1
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 20
-      title: "\u041E\u0433\u0443\u043D\u044C"
-      description: "-\u0414\u0430, \u044F \u0433\u043E\u0440\u044E. \u0422\u0435\u0431\u0435
-        \u043A\u0430\u043A\u043E\u0435 \u0434\u0435\u043B\u043E?"
-      rewardMoney: 100
-      rewardExp: 70
-      level: 6
-      catchStartHour: 12
-      catchEndHour: 14
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 21
-      title: "\u041A\u043E\u0444\u0435\u0440\u0435\u043B\u044C"
-      description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
-        \u0432\u0438\u0434\u0430"
-      rewardMoney: 100
-      rewardExp: 70
-      level: 6
-      catchStartHour: 6
-      catchEndHour: 6
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 22
-      title: "\u0414\u0438\u043D\u043E\u0437\u0430\u0432\u0440\u0438\u043A\u0441"
-      description: "\u0417\u0430\u0447\u0435\u043C \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
-        \u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u043D\u0435\u043F\u043B\u043E\u0445\u043E"
-      rewardMoney: 110
-      rewardExp: 70
-      level: 6
-      catchStartHour: 12
-      catchEndHour: 13
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 23
-      title: "\u0420\u0430\u0434\u0443\u0433\u0430\u043D\u044C\u044F"
-      description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
-        \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
-      rewardMoney: 110
-      rewardExp: 70
-      level: 6
-      catchStartHour: 18
-      catchEndHour: 19
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 24
-      title: "\u0418\u0437\u044F\u0449\u043D\u043E\u0440\u044B\u043B\u0430"
-      description: "\u0421\u0443\u0431\u043B\u0438\u043C\u0438\u0440\u0443\u0435\u0442
-        \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043B\u044E\u0431\u0432\u0438
-        \u043C\u0430\u0442\u0435\u0440\u0438"
-      rewardMoney: 110
-      rewardExp: 78
-      level: 7
-      catchStartHour: 13
-      catchEndHour: 13
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 25
-      title: "\u0418\u0441\u0443\u0441\u0438\u0443\u0441"
-      description: "\u0425\u043E\u0434\u0438\u0442 \u043F\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0443"
-      rewardMoney: 110
-      rewardExp: 78
-      level: 7
-      catchStartHour: 20
-      catchEndHour: 21
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 26
-      title: "\u0429\u0451\u043B\u043A\u0443\u043D\u044C"
-      description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
-        \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
-      rewardMoney: 125
-      rewardExp: 78
-      level: 7
-      catchStartHour: 14
-      catchEndHour: 14
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 27
-      title: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
-      description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
-      rewardMoney: 125
-      rewardExp: 78
-      level: 7
-      catchStartHour: 4
-      catchEndHour: 5
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 28
-      title: "\u0414\u0443\u0440\u043C\u0430\u043D\u0431\u0430\u043B\u0430"
-      description: "\u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444, \u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444"
-      rewardMoney: 125
-      rewardExp: 86
-      level: 8
-      catchStartHour: 9
-      catchEndHour: 9
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 29
-      title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u043A\u0442\u043E\u0440"
-      description: "\u0412\u044B\u043B\u0435\u0447\u0438\u0442 \u0438 \u0438\u0437\u0443\u0432\u0435\u0447\u0438\u0442"
-      rewardMoney: 125
-      rewardExp: 86
-      level: 8
-      catchStartHour: 21
-      catchEndHour: 21
-      isCathed: 0
-      bestRank: 68
-      recordReward: 0
-    - id: 30
-      title: "\u041C\u043E\u0440\u0441\u043A\u043E\u0439 \u043A\u043E\u0442\u0438\u043A"
-      description: "-\u041D\u0443 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C
         \"\u041C\u044F\u0443\"..."
       rewardMoney: 150
       rewardExp: 86
-      level: 8
-      catchStartHour: 6
-      catchEndHour: 8
-      isCathed: 0
+      level: 7
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 31
@@ -8832,10 +8173,10 @@ MonoBehaviour:
       description: "\u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u2026"
       rewardMoney: 150
       rewardExp: 86
-      level: 8
-      catchStartHour: 18
-      catchEndHour: 20
-      isCathed: 0
+      level: 7
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 32
@@ -8844,10 +8185,10 @@ MonoBehaviour:
         \u0411\u0443\u043B\u044C\u043A."
       rewardMoney: 150
       rewardExp: 94
-      level: 9
-      catchStartHour: 16
-      catchEndHour: 17
-      isCathed: 0
+      level: 8
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 33
@@ -8857,10 +8198,10 @@ MonoBehaviour:
         \u0431\u0435\u0437 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F\u2026"
       rewardMoney: 150
       rewardExp: 94
-      level: 9
-      catchStartHour: 0
-      catchEndHour: 2
-      isCathed: 0
+      level: 8
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 34
@@ -8868,10 +8209,10 @@ MonoBehaviour:
       description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
       rewardMoney: 200
       rewardExp: 94
-      level: 9
-      catchStartHour: 9
-      catchEndHour: 11
-      isCathed: 0
+      level: 8
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 35
@@ -8880,10 +8221,10 @@ MonoBehaviour:
         ?"
       rewardMoney: 200
       rewardExp: 94
-      level: 9
-      catchStartHour: 15
-      catchEndHour: 17
-      isCathed: 0
+      level: 8
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 36
@@ -8892,10 +8233,10 @@ MonoBehaviour:
         \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
       rewardMoney: 250
       rewardExp: 102
-      level: 10
-      catchStartHour: 16
-      catchEndHour: 16
-      isCathed: 0
+      level: 9
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 37
@@ -8904,10 +8245,10 @@ MonoBehaviour:
         \u0440\u044B\u0431\u0430"
       rewardMoney: 250
       rewardExp: 102
-      level: 10
-      catchStartHour: 22
-      catchEndHour: 22
-      isCathed: 0
+      level: 9
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 38
@@ -8916,10 +8257,10 @@ MonoBehaviour:
         \u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0442\u0440\u043E\u0441\u043E\u0432..."
       rewardMoney: 250
       rewardExp: 102
-      level: 10
-      catchStartHour: 3
-      catchEndHour: 5
-      isCathed: 0
+      level: 9
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 39
@@ -8928,10 +8269,10 @@ MonoBehaviour:
         \u043A\u0440\u0430\u0441\u043D\u044B\u0445 \u0440\u044B\u0431"
       rewardMoney: 350
       rewardExp: 102
-      level: 10
-      catchStartHour: 2
-      catchEndHour: 3
-      isCathed: 0
+      level: 9
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 40
@@ -8941,10 +8282,10 @@ MonoBehaviour:
         \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
       rewardMoney: 350
       rewardExp: 110
-      level: 11
-      catchStartHour: 19
-      catchEndHour: 19
-      isCathed: 0
+      level: 10
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 41
@@ -8953,10 +8294,10 @@ MonoBehaviour:
         \u0432 \u0441\u0435\u0439\u0444\u0435"
       rewardMoney: 350
       rewardExp: 110
-      level: 11
-      catchStartHour: 14
-      catchEndHour: 15
-      isCathed: 0
+      level: 10
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 42
@@ -8965,10 +8306,10 @@ MonoBehaviour:
         \u0431\u0430\u043D\u0430\u043D\u044B"
       rewardMoney: 500
       rewardExp: 110
-      level: 11
+      level: 10
       catchStartHour: 6
-      catchEndHour: 7
-      isCathed: 0
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 43
@@ -8976,10 +8317,10 @@ MonoBehaviour:
       description: "\u0423\u043F\u043B\u044B\u043B \u0438\u0437 \u0446\u0438\u0440\u043A\u0430\u2026"
       rewardMoney: 500
       rewardExp: 110
-      level: 11
+      level: 10
       catchStartHour: 8
-      catchEndHour: 9
-      isCathed: 0
+      catchEndHour: 23
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 44
@@ -8987,10 +8328,10 @@ MonoBehaviour:
       description: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0432\u044B\u0440\u043E\u043D\u0438\u0442\u044C"
       rewardMoney: 1000
       rewardExp: 118
-      level: 12
-      catchStartHour: 21
-      catchEndHour: 23
-      isCathed: 0
+      level: 11
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 45
@@ -8999,10 +8340,10 @@ MonoBehaviour:
         \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
       rewardMoney: 1000
       rewardExp: 118
-      level: 12
-      catchStartHour: 12
-      catchEndHour: 17
-      isCathed: 0
+      level: 11
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 46
@@ -9012,10 +8353,10 @@ MonoBehaviour:
         \u0437\u043C\u0435\u0439"
       rewardMoney: 1250
       rewardExp: 118
-      level: 12
-      catchStartHour: 6
-      catchEndHour: 11
-      isCathed: 0
+      level: 11
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 47
@@ -9024,10 +8365,10 @@ MonoBehaviour:
         \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
       rewardMoney: 1500
       rewardExp: 118
-      level: 12
-      catchStartHour: 18
-      catchEndHour: 23
-      isCathed: 0
+      level: 11
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     - id: 48
@@ -9036,10 +8377,10 @@ MonoBehaviour:
         \u043C\u0438\u0440\u0430"
       rewardMoney: 5000
       rewardExp: 200
-      level: 13
-      catchStartHour: 0
+      level: 12
+      catchStartHour: 8
       catchEndHour: 23
-      isCathed: 0
+      isCaught: 0
       bestRank: 68
       recordReward: 0
     hookDatas:
@@ -9129,7 +8470,7 @@ MonoBehaviour:
       isItemEquipped: 0
       baitsCount: 0
       isItemMultiplable: 1
-      typeOfFishToImprovement: 1
+      baitsForce: 2
     - itemID: 1
       itemTitle: "\u0427\u0435\u0440\u0432\u044F\u043A\u0438"
       itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
@@ -9140,7 +8481,7 @@ MonoBehaviour:
       isItemEquipped: 0
       baitsCount: 0
       isItemMultiplable: 1
-      typeOfFishToImprovement: 2
+      baitsForce: 3
     - itemID: 2
       itemTitle: "\u041C\u0430\u043B\u044C\u043A\u0438"
       itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
@@ -9151,7 +8492,7 @@ MonoBehaviour:
       isItemEquipped: 0
       baitsCount: 0
       isItemMultiplable: 1
-      typeOfFishToImprovement: 3
+      baitsForce: 4
     - itemID: 3
       itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0431\u043B\u0435\u0441\u043D\u0430"
       itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
@@ -9162,7 +8503,7 @@ MonoBehaviour:
       isItemEquipped: 0
       baitsCount: 0
       isItemMultiplable: 1
-      typeOfFishToImprovement: 4
+      baitsForce: 5
     - itemID: 4
       itemTitle: "\u0411\u0435\u0437 \u043D\u0430\u0436\u0438\u0432\u043A\u0438"
       itemDescription: 
@@ -9171,7 +8512,722 @@ MonoBehaviour:
       isItemEquipped: 1
       baitsCount: 0
       isItemMultiplable: 1
-      typeOfFishToImprovement: 0
+      baitsForce: 1
+  _baseGameData:
+    isGameDataExist: 0
+    exp: 0
+    playerLevel: 0
+    moneyBalance: 0
+    currentHookIndex: 0
+    currentRodIndex: 0
+    currentBaitIndex: 4
+    maxExp: 22400
+    gameDayTimeInMinutes: 720
+    fishDatas:
+    - id: 0
+      title: "\u0417\u0443\u0431\u0430\u0442\u043A\u0430 "
+      description: "\u0410\u0443\u0447!"
+      rewardMoney: 15
+      rewardExp: 30
+      level: 0
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 1
+      title: "\u0428\u0443\u043C\u0435\u043B\u043A\u0430"
+      description: "\u041F\u043E\u043A\u0443\u043F\u0430\u0439 \u0431\u0435\u0440\u0443\u0448\u0438"
+      rewardMoney: 20
+      rewardExp: 30
+      level: 0
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 2
+      title: "\u0425\u0438\u0442\u0440\u043E\u0433\u043B\u0430\u0437 "
+      description: "\u041A\u0430\u043A\u043E\u0439-\u0442\u043E \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
+      rewardMoney: 25
+      rewardExp: 30
+      level: 0
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 3
+      title: "\u0427\u0443\u043C\u0430\u0437\u0443\u0441"
+      description: "\u041E\u0442\u043C\u043E\u0439 \u043C\u0435\u043D\u044F"
+      rewardMoney: 30
+      rewardExp: 30
+      level: 0
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 4
+      title: "\u0423\u0437\u043A\u043E\u043B\u043E\u0431\u0438\u043A"
+      description: "\u0427\u0442\u043E \u0432 \u043B\u043E\u0431, \u0447\u0442\u043E
+        \u043F\u043E \u043B\u0431\u0443\u2026"
+      rewardMoney: 35
+      rewardExp: 38
+      level: 1
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 5
+      title: "\u0420\u0430\u043A\u0443\u0448\u0435\u043B\u044C\u043D\u0438\u043A"
+      description: "\u041B\u044E\u0431\u0438\u0442\u0435\u043B\u044C \u0438\u0433\u0440\u0430\u0442\u044C
+        \u0432 \u043F\u0440\u044F\u0442\u043A\u0438"
+      rewardMoney: 40
+      rewardExp: 38
+      level: 1
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 6
+      title: "\u041E\u0441\u043C\u0438\u043D\u043E\u0433\u0430 "
+      description: "\u0412\u043E\u0441\u0435\u043C\u044C \u0433\u043E\u043B\u043E\u0432,
+        \u0430 \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0433\u043B\u0443\u043F\u0430\u044F"
+      rewardMoney: 45
+      rewardExp: 38
+      level: 1
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 7
+      title: "\u0421\u0438\u043D\u0435\u0445\u0432\u043E\u0441\u0442 "
+      description: "\u042B\u044B\u043A\u2026"
+      rewardMoney: 50
+      rewardExp: 38
+      level: 1
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 8
+      title: "\u0415\u0436\u0438\u0440\u043D\u0438\u043A\u0441"
+      description: "\u041D\u0435 \u043F\u0440\u0438\u043D\u044F\u043B \u0441\u0435\u0431\u044F,
+        \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u0435\u0442"
+      rewardMoney: 50
+      rewardExp: 46
+      level: 2
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 9
+      title: "\u042F\u0433\u043E\u0440\u044C "
+      description: "\u041E\u043F\u044F\u0442\u044C \u043F\u0440\u0438\u0446\u0435\u043F\u0438\u043B\u0441\u044F"
+      rewardMoney: 60
+      rewardExp: 46
+      level: 2
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 10
+      title: "\u0426\u0432\u0435\u0442\u0438\u043A "
+      description: "\u0421\u0435\u043C\u0438\u0446\u0432\u0435\u0442\u0438\u043A"
+      rewardMoney: 60
+      rewardExp: 46
+      level: 2
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 11
+      title: "\u041B\u0443\u043D\u043A\u0430 "
+      description: "\u041D\u0435 \u043B\u044E\u0431\u0438\u0442 \u0433\u043E\u043B\u044C\u0444\u0438\u0441\u0442\u043E\u0432"
+      rewardMoney: 65
+      rewardExp: 46
+      level: 2
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 12
+      title: "\u041E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044C "
+      description: "\u0414\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u043E
+        \u043D\u0435 \u0440\u0430\u0441\u043A\u043E\u043B\u0435\u0442\u0441\u044F"
+      rewardMoney: 65
+      rewardExp: 54
+      level: 3
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 13
+      title: "\u041C\u0435\u0433\u0430\u043B\u0430\u0434\u043E\u043D\u044C "
+      description: "\u0414\u0430\u0439 \u043F\u044F\u0442\u044C!"
+      rewardMoney: 75
+      rewardExp: 54
+      level: 3
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 14
+      title: "\u0423\u0434\u043E\u0447\u043D\u0438\u043A "
+      description: "\u0422\u044B \u0434\u0443\u043C\u0430\u043B \u0442\u044B \u043F\u043E\u0439\u043C\u0430\u043B
+        \u0435\u0433\u043E - \u044D\u0442\u043E \u043E\u043D \u043F\u043E\u0439\u043C\u0430\u043B
+        \u0442\u0435\u0431\u044F!"
+      rewardMoney: 75
+      rewardExp: 54
+      level: 3
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 15
+      title: "\u0413\u0440\u043E\u0437\u043D\u0438\u043A "
+      description: "\u041B\u0443\u0447\u0448\u0435 \u0434\u0435\u0440\u0436\u0430\u0442\u044C\u0441\u044F
+        \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438"
+      rewardMoney: 85
+      rewardExp: 54
+      level: 3
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 16
+      title: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u0447\u0435\u0448\u0443\u0439\u043A\u0430"
+      description: "\u0421\u043A\u0430\u0437\u043E\u0447\u043D\u0430\u044F \u0448\u043A\u0443\u0440\u0430"
+      rewardMoney: 90
+      rewardExp: 62
+      level: 4
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 17
+      title: "\u041F\u0443\u043B\u0435\u043C\u0451\u0442 "
+      description: "\u041C\u0435\u0447\u0435\u0442 \u043F\u0443\u043B\u0438"
+      rewardMoney: 95
+      rewardExp: 62
+      level: 4
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 18
+      title: "\u0426\u0438\u043A\u043B\u043E\u043F\u0438\u044F"
+      description: "\u041F\u043E\u0434\u0432\u043E\u0434\u043D\u0430\u044F \u043F\u0438\u0440\u0430\u0442\u043A\u0430"
+      rewardMoney: 100
+      rewardExp: 62
+      level: 4
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 19
+      title: "\u041F\u0430\u0443\u043A\u0430\u0440\u0430\u0441\u044C"
+      description: "\u041D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0442,
+        \u0437\u0430\u0447\u0435\u043C \u0435\u043C\u0443 \u0441\u0442\u043E\u043B\u044C\u043A\u043E
+        \u043B\u0430\u043F"
+      rewardMoney: 100
+      rewardExp: 62
+      level: 4
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 20
+      title: "\u041E\u0433\u0443\u043D\u044C"
+      description: "-\u0414\u0430, \u044F \u0433\u043E\u0440\u044E. \u0422\u0435\u0431\u0435
+        \u043A\u0430\u043A\u043E\u0435 \u0434\u0435\u043B\u043E?"
+      rewardMoney: 100
+      rewardExp: 70
+      level: 5
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 21
+      title: "\u041A\u043E\u0444\u0435\u0440\u0435\u043B\u044C"
+      description: "\u0411\u043E\u0434\u0440\u0438\u0442 \u043E\u0442 \u043E\u0434\u043D\u043E\u0433\u043E
+        \u0432\u0438\u0434\u0430"
+      rewardMoney: 100
+      rewardExp: 70
+      level: 5
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 22
+      title: "\u0414\u0438\u043D\u043E\u0437\u0430\u0432\u0440\u0438\u043A\u0441"
+      description: "\u0417\u0430\u0447\u0435\u043C \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C.
+        \u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u043D\u0435\u043F\u043B\u043E\u0445\u043E"
+      rewardMoney: 110
+      rewardExp: 70
+      level: 5
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 23
+      title: "\u0420\u0430\u0434\u0443\u0433\u0430\u043D\u044C\u044F"
+      description: "\u0423 \u043D\u0435\u0435 \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E
+        \u0442\u044F\u0436\u0435\u043B\u0430\u044F \u0436\u0438\u0437\u043D\u044C"
+      rewardMoney: 110
+      rewardExp: 70
+      level: 5
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 24
+      title: "\u0418\u0437\u044F\u0449\u043D\u043E\u0440\u044B\u043B\u0430"
+      description: "\u0421\u0443\u0431\u043B\u0438\u043C\u0438\u0440\u0443\u0435\u0442
+        \u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u043A \u043B\u044E\u0431\u0432\u0438
+        \u043C\u0430\u0442\u0435\u0440\u0438"
+      rewardMoney: 110
+      rewardExp: 78
+      level: 6
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 25
+      title: "\u0418\u0441\u0443\u0441\u0438\u0443\u0441"
+      description: "\u0425\u043E\u0434\u0438\u0442 \u043F\u043E \u0432\u043E\u0437\u0434\u0443\u0445\u0443"
+      rewardMoney: 110
+      rewardExp: 78
+      level: 6
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 26
+      title: "\u0429\u0435\u043B\u043A\u0443\u043D\u044C"
+      description: "\u041D\u0435 \u043F\u043E\u0434\u043F\u0443\u0441\u043A\u0430\u0442\u044C
+        \u043A \u043E\u0440\u0435\u0445\u043E\u0441\u043E\u0441\u044E"
+      rewardMoney: 125
+      rewardExp: 78
+      level: 6
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 27
+      title: "\u041D\u0435\u043B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
+      description: "\u042F \u043B\u0443\u0447\u0448\u0435 \u043D\u0430 \u043F\u043E\u0435\u0437\u0434\u0435"
+      rewardMoney: 125
+      rewardExp: 78
+      level: 6
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 28
+      title: "\u0414\u0443\u0440\u043C\u0430\u043D\u0431\u0430\u043B\u0430"
+      description: "\u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444, \u0445\u0440\u0440\u0440-\u043F\u0444\u0444\u0444"
+      rewardMoney: 125
+      rewardExp: 86
+      level: 7
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 29
+      title: "\u0411\u0430\u0440\u0440\u0430\u043A\u0443\u0434\u043E\u043A\u0442\u043E\u0440"
+      description: "\u0412\u044B\u043B\u0435\u0447\u0438\u0442 \u0438 \u0438\u0437\u0443\u0432\u0435\u0447\u0438\u0442"
+      rewardMoney: 125
+      rewardExp: 86
+      level: 7
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 30
+      title: "\u041C\u043E\u0440\u0441\u043A\u043E\u0439 \u043A\u043E\u0442\u0438\u043A"
+      description: "\u041D\u0443 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C
+        \"\u041C\u044F\u0443\"..."
+      rewardMoney: 150
+      rewardExp: 86
+      level: 7
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 31
+      title: "\u0410\u0431\u043E\u043C\u0431\u0430"
+      description: "\u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E\u2026"
+      rewardMoney: 150
+      rewardExp: 86
+      level: 7
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 32
+      title: "\u0428\u043F\u0438\u0443\u043D\u044C"
+      description: "\u0411\u0443\u043B\u044C\u043A. \u0414\u0436\u0435\u0439\u043C\u0441
+        \u0411\u0443\u043B\u044C\u043A."
+      rewardMoney: 150
+      rewardExp: 94
+      level: 8
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 33
+      title: "\u041C\u0430\u0440\u043B\u0438\u043D \u0411\u0440\u0430\u043D\u0434\u043E  "
+      description: "\u0422\u044B \u043B\u043E\u0432\u0438\u0448\u044C \u043C\u0435\u043D\u044F,
+        \u043D\u043E \u0434\u0435\u043B\u0430\u0435\u0448\u044C \u044D\u0442\u043E
+        \u0431\u0435\u0437 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u044F\u2026"
+      rewardMoney: 150
+      rewardExp: 94
+      level: 8
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 34
+      title: "\u0416\u0435\u043C\u0447\u0443\u0436\u0438\u043D\u043A\u0430"
+      description: "\u041D\u0435 \u0441\u043B\u043E\u043C\u0430\u0439 \u0437\u0443\u0431\u044B"
+      rewardMoney: 200
+      rewardExp: 94
+      level: 8
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 35
+      title: "\u0411\u0440\u0438\u043B\u044C\u044F\u043D\u044C\u044F"
+      description: "\u0418 \u043A\u0430\u043A \u0435\u0451 \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C
+        ?"
+      rewardMoney: 200
+      rewardExp: 94
+      level: 8
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 36
+      title: "\u041A\u0440\u043E\u043A\u043E\u0434\u0443\u043F\u043F\u0438"
+      description: "\u0421\u0432\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0447\u0443\u0436\u0438\u0445,
+        \u0447\u0443\u0436\u043E\u0439 \u0441\u0440\u0435\u0434\u0438 \u0441\u0432\u043E\u0438\u0445"
+      rewardMoney: 250
+      rewardExp: 102
+      level: 9
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 37
+      title: "\u0410\u043A\u0443\u043B\u044F\u0441\u043A\u0430 "
+      description: "\u0425\u043E\u043B\u043E\u0434\u043D\u0430\u044F \u0438 \u0433\u0440\u0443\u0441\u0442\u043D\u0430\u044F
+        \u0440\u044B\u0431\u0430"
+      rewardMoney: 250
+      rewardExp: 102
+      level: 9
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 38
+      title: "\u0417\u043E\u043B\u043E\u0442\u043E\u0440\u0443\u043D\u043A\u0430"
+      description: "\u041D\u0435\u0434\u043E\u043B\u044E\u0431\u043B\u0438\u0432\u0430\u0435\u0442
+        \u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0442\u0440\u043E\u0441\u043E\u0432..."
+      rewardMoney: 250
+      rewardExp: 102
+      level: 9
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 39
+      title: "\u0411\u044B\u0447\u043E\u043A"
+      description: "\u0414\u043E\u0441\u0442\u0430\u043B \u0432\u0441\u0435\u0445
+        \u043A\u0440\u0430\u0441\u043D\u044B\u0445 \u0440\u044B\u0431"
+      rewardMoney: 350
+      rewardExp: 102
+      level: 9
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 40
+      title: "\u0428\u0443\u0442\u043E\u0431\u043B\u0430 "
+      description: "\u0423 \u0432\u0430\u0441 \u0431\u044B\u0432\u0430\u043B\u043E
+        \u0442\u0430\u043A\u043E\u0435, \u043F\u043B\u044B\u0432\u0435\u0442\u0435
+        \u0432\u044B \u0432 \u043C\u043E\u0440\u0435..."
+      rewardMoney: 350
+      rewardExp: 110
+      level: 10
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 41
+      title: "\u041C\u0435\u0434\u0432\u0435\u0436\u0430\u0442\u043D\u0438\u043A "
+      description: "\u041D\u0435 \u0445\u0440\u0430\u043D\u0438\u0442\u0435 \u0435\u0433\u043E
+        \u0432 \u0441\u0435\u0439\u0444\u0435"
+      rewardMoney: 350
+      rewardExp: 110
+      level: 10
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 42
+      title: "\u041E\u0440\u0430\u043D\u0433\u0443\u0442\u0430\u0439"
+      description: "\u041B\u044E\u0431\u0438\u0442 \u043C\u043E\u0440\u0441\u043A\u0438\u0435
+        \u0431\u0430\u043D\u0430\u043D\u044B"
+      rewardMoney: 500
+      rewardExp: 110
+      level: 10
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 43
+      title: "\u0422\u0438\u0433\u0440\u043E\u043D"
+      description: "\u0423\u043F\u043B\u044B\u043B \u0438\u0437 \u0446\u0438\u0440\u043A\u0430\u2026"
+      rewardMoney: 500
+      rewardExp: 110
+      level: 10
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 44
+      title: "\u041D\u0435\u0432\u0435\u0434\u0438\u043C\u0431\u0440\u0438\u044F"
+      description: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0432\u044B\u0440\u043E\u043D\u0438\u0442\u044C"
+      rewardMoney: 1000
+      rewardExp: 118
+      level: 11
+      catchStartHour: 0
+      catchEndHour: 15
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 45
+      title: "\u0424\u0435\u043D\u0438\u043A\u0441\u043E\u043C "
+      description: "\u041D\u0438\u043A\u0430\u043A \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
+        \u0432\u043E\u0437\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F"
+      rewardMoney: 1000
+      rewardExp: 118
+      level: 11
+      catchStartHour: 2
+      catchEndHour: 11
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 46
+      title: "\u0425\u0438\u043C\u0435\u0440\u044B\u0447"
+      description: "\u0414\u0443\u043C\u0430\u0435\u0442 \u043E\u043D \u043B\u0435\u0432,
+        \u0430 \u043F\u043E \u0441\u0443\u0442\u0438 \u0442\u043E\u0442 \u0435\u0449\u0451
+        \u0437\u043C\u0435\u0439"
+      rewardMoney: 1250
+      rewardExp: 118
+      level: 11
+      catchStartHour: 4
+      catchEndHour: 19
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 47
+      title: "\u0415\u0434\u0438\u043D\u043E\u0440\u044B\u0431 "
+      description: "\u041B\u0435\u0433\u0435\u043D\u0434\u0430\u0440\u043D\u043E\u0435
+        \u0431\u043B\u0430\u0433\u043E\u0440\u044B\u0431\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E"
+      rewardMoney: 1500
+      rewardExp: 118
+      level: 11
+      catchStartHour: 6
+      catchEndHour: 21
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    - id: 48
+      title: "\u0428\u043B\u0430\u043A\u043E\u0431\u043B\u043E\u043A\u0443\u043D\u044C"
+      description: "\u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u044D\u0442\u043E\u0433\u043E
+        \u043C\u0438\u0440\u0430"
+      rewardMoney: 5000
+      rewardExp: 200
+      level: 12
+      catchStartHour: 8
+      catchEndHour: 23
+      isCaught: 0
+      bestRank: 68
+      recordReward: 0
+    hookDatas:
+    - itemID: 0
+      itemTitle: "\u0414\u0435\u0440\u0435\u0432\u044F\u043D\u043D\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
+      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
+        30"
+      itemPrice: 0
+      hookSize: 3
+      isItemBuyed: 1
+      isItemEquipped: 1
+      isItemMultiplable: 0
+    - itemID: 1
+      itemTitle: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
+      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
+        40"
+      itemPrice: 2500
+      hookSize: 4
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    - itemID: 2
+      itemTitle: "\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+        \u043A\u0440\u044E\u0447\u043E\u043A"
+      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
+        50"
+      itemPrice: 25000
+      hookSize: 5
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    - itemID: 3
+      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u044B\u0439 \u043A\u0440\u044E\u0447\u043E\u043A"
+      itemDescription: "\u0420\u0430\u0437\u043C\u0435\u0440 \"\u043A\u0440\u044E\u0447\u043A\u0430\":
+        60"
+      itemPrice: 250000
+      hookSize: 6
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    rodDatas:
+    - itemID: 0
+      itemTitle: "\u0412\u0435\u0442\u043A\u0430"
+      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
+        40"
+      itemPrice: 0
+      progressForce: 1
+      isItemBuyed: 1
+      isItemEquipped: 1
+      isItemMultiplable: 0
+    - itemID: 1
+      itemTitle: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u0430\u044F \u0443\u0434\u043E\u0447\u043A\u0430"
+      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
+        60"
+      itemPrice: 10000
+      progressForce: 2
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    - itemID: 2
+      itemTitle: "\u041C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+        \u0443\u0434\u043E\u0447\u043A\u0430"
+      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
+        80"
+      itemPrice: 100000
+      progressForce: 3
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    - itemID: 3
+      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0443\u0434\u043E\u0447\u043A\u0430"
+      itemDescription: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043B\u043E\u0432\u043B\u0438:
+        100"
+      itemPrice: 1000000
+      progressForce: 4
+      isItemBuyed: 0
+      isItemEquipped: 0
+      isItemMultiplable: 0
+    baitDatas:
+    - itemID: 0
+      itemTitle: "\u0420\u0438\u0441"
+      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
+        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
+        C \u0440\u0430\u043D\u0433\u0430"
+      itemPrice: 100
+      isItemBuyed: 0
+      isItemEquipped: 0
+      baitsCount: 0
+      isItemMultiplable: 1
+      baitsForce: 2
+    - itemID: 1
+      itemTitle: "\u0427\u0435\u0440\u0432\u044F\u043A\u0438"
+      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
+        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
+        B \u0440\u0430\u043D\u0433\u0430"
+      itemPrice: 1000
+      isItemBuyed: 0
+      isItemEquipped: 0
+      baitsCount: 0
+      isItemMultiplable: 1
+      baitsForce: 3
+    - itemID: 2
+      itemTitle: "\u041C\u0430\u043B\u044C\u043A\u0438"
+      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
+        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
+        A \u0440\u0430\u043D\u0433\u0430"
+      itemPrice: 10000
+      isItemBuyed: 0
+      isItemEquipped: 0
+      baitsCount: 0
+      isItemMultiplable: 1
+      baitsForce: 4
+    - itemID: 3
+      itemTitle: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0431\u043B\u0435\u0441\u043D\u0430"
+      itemDescription: "\u041F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u044B\u0439
+        \u0448\u0430\u043D\u0441 \u043F\u043E\u0439\u043C\u0430\u0442\u044C \u0440\u044B\u0431\u0443
+        S \u0440\u0430\u043D\u0433\u0430"
+      itemPrice: 100000
+      isItemBuyed: 0
+      isItemEquipped: 0
+      baitsCount: 0
+      isItemMultiplable: 1
+      baitsForce: 5
+    - itemID: 4
+      itemTitle: "\u0411\u0435\u0437 \u043D\u0430\u0436\u0438\u0432\u043A\u0438"
+      itemDescription: 
+      itemPrice: 0
+      isItemBuyed: 1
+      isItemEquipped: 1
+      baitsCount: 0
+      isItemMultiplable: 1
+      baitsForce: 1
   _fishSprites:
   - {fileID: 1196712862, guid: a26d1d5b04463054f8193504b47214af, type: 3}
   - {fileID: 13517402, guid: a26d1d5b04463054f8193504b47214af, type: 3}
@@ -11829,6 +11885,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640868585}
   m_CullTransparentMesh: 1
+--- !u!1 &646593892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 646593893}
+  - component: {fileID: 646593895}
+  - component: {fileID: 646593894}
+  m_Layer: 5
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &646593893
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646593892}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 946270859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 294.755, y: 15.865}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &646593894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646593892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1599891349, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &646593895
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646593892}
+  m_CullTransparentMesh: 1
 --- !u!1 &647088005
 GameObject:
   m_ObjectHideFlags: 0
@@ -12009,7 +12140,7 @@ GameObject:
   - component: {fileID: 679121194}
   - component: {fileID: 679121197}
   m_Layer: 0
-  m_Name: StateMachine
+  m_Name: MinigameStateMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12063,7 +12194,7 @@ MonoBehaviour:
   catchPoint: {fileID: 1801618110}
   currentHookTypeIndex: 0
   gameDataSystem: {fileID: 498079033}
-  fishingPrepareSystem: {fileID: 379501375}
+  fishingPrepareSystem: {fileID: 379501376}
   catchedFishCanvas: {fileID: 350015798}
   newCatchedFishCanvas: {fileID: 1555785219}
   fishesCollection: {fileID: 1284039312}
@@ -12076,7 +12207,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 0
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   CatchedFishField: {fileID: 632805551}
@@ -15002,6 +15133,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871812962}
   m_CullTransparentMesh: 1
+--- !u!1 &884703311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884703312}
+  - component: {fileID: 884703314}
+  - component: {fileID: 884703313}
+  m_Layer: 5
+  m_Name: Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &884703312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884703311}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 946270859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 294.755, y: 20.04}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &884703313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884703311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1908943517, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &884703314
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884703311}
+  m_CullTransparentMesh: 1
 --- !u!1 &885850954
 GameObject:
   m_ObjectHideFlags: 0
@@ -15792,68 +15998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911655193}
   m_CullTransparentMesh: 1
---- !u!1 &918132990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 918132991}
-  - component: {fileID: 918132993}
-  - component: {fileID: 918132994}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &918132991
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918132990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 286398453}
-  - {fileID: 1744300234}
-  - {fileID: 1638254988}
-  m_Father: {fileID: 2048755084}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 320, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &918132993
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918132990}
-  m_CullTransparentMesh: 1
---- !u!114 &918132994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918132990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 0, w: 0}
-  m_Softness: {x: 0, y: 0}
 --- !u!1 &929925850
 GameObject:
   m_ObjectHideFlags: 0
@@ -16213,6 +16357,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945533176}
   m_CullTransparentMesh: 1
+--- !u!1 &946270858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946270859}
+  - component: {fileID: 946270861}
+  - component: {fileID: 946270860}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &946270859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946270858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 646593893}
+  - {fileID: 2074231835}
+  - {fileID: 884703312}
+  m_Father: {fileID: 1354212402}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 320, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &946270860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946270858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
+--- !u!222 &946270861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946270858}
+  m_CullTransparentMesh: 1
 --- !u!1 &949916802
 GameObject:
   m_ObjectHideFlags: 0
@@ -16297,6 +16503,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &962373801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962373802}
+  - component: {fileID: 962373804}
+  - component: {fileID: 962373803}
+  m_Layer: 5
+  m_Name: ExpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &962373802
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962373801}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1354212402}
+  m_Father: {fileID: 1321911292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 228, y: 92}
+  m_SizeDelta: {x: 322.5, y: 80}
+  m_Pivot: {x: 0.49999988, y: 0.5}
+--- !u!114 &962373803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962373801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36613a68d330429faae10f2779a37599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventBus: {fileID: 1085512453}
+  _expFill: {fileID: 2074231836}
+  _levelText: {fileID: 329894795}
+  _expThresholds: 00000000640000002c010000580200004c0400003a070000220b00000410000044160000141e0000d827000058340000f843000080570000
+  _debugExp: 19224
+--- !u!222 &962373804
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962373801}
+  m_CullTransparentMesh: 1
 --- !u!1 &966013837
 GameObject:
   m_ObjectHideFlags: 0
@@ -19146,6 +19415,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097536787}
   m_CullTransparentMesh: 1
+--- !u!1 &1102551562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102551563}
+  - component: {fileID: 1102551567}
+  - component: {fileID: 1102551566}
+  - component: {fileID: 1102551565}
+  - component: {fileID: 1102551564}
+  m_Layer: 5
+  m_Name: ExpCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1102551563
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102551562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1321911292}
+  m_Father: {fileID: 1348376665}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1102551564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102551562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0fc8f59962bc64f8b233ce86f1ddf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+--- !u!114 &1102551565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102551562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1102551566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102551562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 167
+  m_ScaleFactor: 1.5
+  m_ReferenceResolution: {x: 1080, y: 1020}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1102551567
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102551562}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 383831551}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: -191859739
+  m_SortingOrder: 10
+  m_TargetDisplay: 0
 --- !u!1 &1105578796
 GameObject:
   m_ObjectHideFlags: 0
@@ -20551,8 +20936,8 @@ MonoBehaviour:
     D\n\u0412\u0435\u0441: 1884\n\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C:
     188\n\u0420\u0435\u0447\u043D\u043E\u0439 \u043E\u0440\u0435\u0445asdasdasdasdasdasdasdasdasdasdasdasdasdas"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
+  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21873,6 +22258,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238605831}
   m_CullTransparentMesh: 1
+--- !u!1 &1245354262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1245354263}
+  - component: {fileID: 1245354265}
+  - component: {fileID: 1245354264}
+  m_Layer: 5
+  m_Name: LevelBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1245354263
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245354262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 329894794}
+  m_Father: {fileID: 1354212402}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -137.57, y: 0}
+  m_SizeDelta: {x: 50.935, y: 53.440002}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1245354264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245354262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1998654175, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1245354265
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245354262}
+  m_CullTransparentMesh: 1
 --- !u!1 &1249049864
 GameObject:
   m_ObjectHideFlags: 0
@@ -22317,7 +22778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: 858.18}
+  m_AnchoredPosition: {x: -20, y: 858.1802}
   m_SizeDelta: {x: 49.34, y: 1749.11}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1284039314
@@ -22523,7 +22984,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 0
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 1
@@ -22534,7 +22995,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 1
     catchEndHour: 1
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 2
@@ -22545,7 +23006,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 2
     catchEndHour: 2
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 3
@@ -22556,7 +23017,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 3
     catchEndHour: 3
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 4
@@ -22568,7 +23029,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 4
     catchEndHour: 4
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 5
@@ -22579,7 +23040,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 5
     catchEndHour: 5
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 6
@@ -22591,7 +23052,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 6
     catchEndHour: 6
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 7
@@ -22602,7 +23063,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 7
     catchEndHour: 7
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 8
@@ -22613,7 +23074,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 8
     catchEndHour: 8
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 9
@@ -22625,7 +23086,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 9
     catchEndHour: 9
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 10
@@ -22636,7 +23097,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 10
     catchEndHour: 10
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 11
@@ -22648,7 +23109,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 11
     catchEndHour: 11
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 12
@@ -22661,7 +23122,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 12
     catchEndHour: 12
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 13
@@ -22672,7 +23133,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 13
     catchEndHour: 13
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 14
@@ -22684,7 +23145,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 14
     catchEndHour: 14
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 15
@@ -22696,7 +23157,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 15
     catchEndHour: 15
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 16
@@ -22708,7 +23169,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 16
     catchEndHour: 16
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 17
@@ -22720,7 +23181,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 17
     catchEndHour: 17
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 18
@@ -22731,7 +23192,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 18
     catchEndHour: 18
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 19
@@ -22744,7 +23205,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 19
     catchEndHour: 19
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 20
@@ -22757,7 +23218,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 20
     catchEndHour: 20
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 21
@@ -22768,7 +23229,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 21
     catchEndHour: 21
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 22
@@ -22780,7 +23241,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 22
     catchEndHour: 22
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 23
@@ -22793,7 +23254,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 23
     catchEndHour: 23
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 24
@@ -22804,7 +23265,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 1
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 25
@@ -22816,7 +23277,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 2
     catchEndHour: 3
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 26
@@ -22827,7 +23288,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 4
     catchEndHour: 5
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 27
@@ -22839,7 +23300,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 6
     catchEndHour: 7
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 28
@@ -22850,7 +23311,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 8
     catchEndHour: 9
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 29
@@ -22861,7 +23322,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 10
     catchEndHour: 11
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 30
@@ -22872,7 +23333,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 12
     catchEndHour: 13
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 31
@@ -22884,7 +23345,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 14
     catchEndHour: 15
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 32
@@ -22896,7 +23357,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 16
     catchEndHour: 17
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 33
@@ -22908,7 +23369,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 18
     catchEndHour: 19
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 34
@@ -22919,7 +23380,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 20
     catchEndHour: 21
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 35
@@ -22931,7 +23392,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 22
     catchEndHour: 23
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 36
@@ -22943,7 +23404,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 2
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 37
@@ -22954,7 +23415,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 3
     catchEndHour: 5
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 38
@@ -22965,7 +23426,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 6
     catchEndHour: 8
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 39
@@ -22976,7 +23437,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 9
     catchEndHour: 11
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 40
@@ -22988,7 +23449,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 12
     catchEndHour: 14
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 41
@@ -22999,7 +23460,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 15
     catchEndHour: 17
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 42
@@ -23010,7 +23471,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 18
     catchEndHour: 20
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 43
@@ -23021,7 +23482,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 21
     catchEndHour: 23
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 44
@@ -23034,7 +23495,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 5
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 45
@@ -23047,7 +23508,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 6
     catchEndHour: 11
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 46
@@ -23059,7 +23520,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 12
     catchEndHour: 17
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 47
@@ -23070,7 +23531,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 18
     catchEndHour: 23
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   - id: 48
@@ -23082,7 +23543,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 23
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   _interectableButtonAlfa: 1
@@ -23621,7 +24082,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2098057913}
+  - {fileID: 1871656920}
   - {fileID: 2105424799}
   - {fileID: 63644202}
   - {fileID: 1645801715}
@@ -23719,6 +24180,58 @@ Canvas:
   m_SortingLayerID: -191859739
   m_SortingOrder: 9
   m_TargetDisplay: 0
+--- !u!1 &1321911291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321911292}
+  - component: {fileID: 1321911293}
+  m_Layer: 5
+  m_Name: SafeAreaObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1321911292
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321911291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 962373802}
+  m_Father: {fileID: 1102551563}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1321911293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321911291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97afc556caea1c44969477eb7ddec74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConformX: 1
+  ConformY: 1
+  Logging: 0
 --- !u!1 &1324035989
 GameObject:
   m_ObjectHideFlags: 0
@@ -24393,6 +24906,7 @@ Transform:
   m_Children:
   - {fileID: 300338629}
   - {fileID: 1256525703}
+  - {fileID: 1102551563}
   m_Father: {fileID: 276234153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1348376666
@@ -24426,7 +24940,7 @@ MonoBehaviour:
     level: 0
     catchStartHour: 0
     catchEndHour: 0
-    isCathed: 0
+    isCaught: 0
     bestRank: 0
     recordReward: 0
   selectedFishSprite: {fileID: 1542089015}
@@ -24521,10 +25035,10 @@ MonoBehaviour:
   - {fileID: 929925852}
   - {fileID: 19121575}
   - {fileID: 1132429001}
-  - {fileID: 286398454}
-  - {fileID: 1744300235}
-  - {fileID: 1638254989}
-  - {fileID: 1686183217}
+  - {fileID: 646593894}
+  - {fileID: 2074231837}
+  - {fileID: 884703313}
+  - {fileID: 1245354264}
   _gameDataSystem: {fileID: 498079033}
   _R: 180
   _G: 160
@@ -24663,6 +25177,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353262008}
   m_CullTransparentMesh: 1
+--- !u!1 &1354212401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1354212402}
+  m_Layer: 5
+  m_Name: UIContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1354212402
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354212401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 946270859}
+  - {fileID: 1245354263}
+  m_Father: {fileID: 962373802}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1387528592
 GameObject:
   m_ObjectHideFlags: 0
@@ -29713,81 +30264,6 @@ MonoBehaviour:
   _sunLight: {fileID: 1873789481}
   _gameDataSystem: {fileID: 498079033}
   a: 50
---- !u!1 &1638254987
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1638254988}
-  - component: {fileID: 1638254990}
-  - component: {fileID: 1638254989}
-  m_Layer: 5
-  m_Name: Frame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1638254988
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638254987}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 918132991}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 294.755, y: 20.04}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1638254989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638254987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1908943517, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1638254990
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638254987}
-  m_CullTransparentMesh: 1
 --- !u!1 &1645238506
 GameObject:
   m_ObjectHideFlags: 0
@@ -30685,82 +31161,6 @@ MonoBehaviour:
   - {fileID: 538728200}
   - {fileID: 966013840}
   - {fileID: 1324035992}
---- !u!1 &1686183215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1686183216}
-  - component: {fileID: 1686183218}
-  - component: {fileID: 1686183217}
-  m_Layer: 5
-  m_Name: LevelBG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1686183216
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686183215}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2072015856}
-  m_Father: {fileID: 2048755084}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -137.57, y: 0}
-  m_SizeDelta: {x: 50.935, y: 53.440002}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1686183217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686183215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1998654175, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1686183218
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686183215}
-  m_CullTransparentMesh: 1
 --- !u!1 &1688295301
 GameObject:
   m_ObjectHideFlags: 0
@@ -31340,96 +31740,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743866627}
   m_CullTransparentMesh: 1
---- !u!1 &1744300233
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1744300234}
-  - component: {fileID: 1744300236}
-  - component: {fileID: 1744300235}
-  - component: {fileID: 1744300237}
-  m_Layer: 5
-  m_Name: Fill
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1744300234
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744300233}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 918132991}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.8, y: 0}
-  m_SizeDelta: {x: 294.755, y: 17.535}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1744300235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744300233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -1321237367, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1744300236
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744300233}
-  m_CullTransparentMesh: 1
---- !u!114 &1744300237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744300233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f96638cfe8926f845bc4734b619c3985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _leftPositionBorder: -250
-  _rightPositionBorder: 0
 --- !u!1 &1747689094
 GameObject:
   m_ObjectHideFlags: 0
@@ -32559,69 +32869,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805647871}
   m_CullTransparentMesh: 1
---- !u!1 &1806498977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806498978}
-  - component: {fileID: 1806498980}
-  - component: {fileID: 1806498981}
-  m_Layer: 5
-  m_Name: ExpManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1806498978
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806498977}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2048755084}
-  m_Father: {fileID: 303618601}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 228, y: 92}
-  m_SizeDelta: {x: 322.5, y: 80}
-  m_Pivot: {x: 0.49999988, y: 0.5}
---- !u!222 &1806498980
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806498977}
-  m_CullTransparentMesh: 1
---- !u!114 &1806498981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806498977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36613a68d330429faae10f2779a37599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventBus: {fileID: 1085512453}
-  _expFill: {fileID: 1744300237}
-  _levelText: {fileID: 2072015857}
-  _expThresholds: 00000000640000002c010000580200004c0400003a070000220b00000410000044160000141e0000d827000058340000f843000080570000
-  _debugExp: 19224
 --- !u!1 &1812890054
 GameObject:
   m_ObjectHideFlags: 0
@@ -33516,6 +33763,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 149874106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1871656919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1871656920}
+  - component: {fileID: 1871656922}
+  - component: {fileID: 1871656921}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1871656920
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871656919}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 188, y: 188, z: 188}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1314160346}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 4000, y: 2500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1871656921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871656919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1871656922
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871656919}
+  m_CullTransparentMesh: 1
 --- !u!1 &1872839334
 GameObject:
   m_ObjectHideFlags: 0
@@ -35874,7 +36196,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1588606427}
   m_HandleRect: {fileID: 1588606426}
   m_Direction: 2
-  m_Value: 0.00000014224325
+  m_Value: -0.00000014224327
   m_Size: 0.5093619
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -36818,43 +37140,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2048755083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2048755084}
-  m_Layer: 5
-  m_Name: UIContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2048755084
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048755083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 918132991}
-  - {fileID: 1686183216}
-  m_Father: {fileID: 1806498978}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2050107098
 GameObject:
   m_ObjectHideFlags: 0
@@ -37014,7 +37299,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059011172}
   m_CullTransparentMesh: 1
---- !u!1 &2072015855
+--- !u!1 &2074231834
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37022,45 +37307,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2072015856}
-  - component: {fileID: 2072015858}
-  - component: {fileID: 2072015857}
+  - component: {fileID: 2074231835}
+  - component: {fileID: 2074231838}
+  - component: {fileID: 2074231837}
+  - component: {fileID: 2074231836}
   m_Layer: 5
-  m_Name: LevelText
+  m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2072015856
+--- !u!224 &2074231835
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072015855}
+  m_GameObject: {fileID: 2074231834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1686183216}
+  m_Father: {fileID: 946270859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.4, y: -1.3}
-  m_SizeDelta: {x: 26.405, y: 29.88}
+  m_AnchoredPosition: {x: -158.8, y: 0}
+  m_SizeDelta: {x: 294.755, y: 17.535}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2072015857
+--- !u!114 &2074231836
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072015855}
+  m_GameObject: {fileID: 2074231834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: f96638cfe8926f845bc4734b619c3985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leftPositionBorder: -250
+  _rightPositionBorder: 0
+--- !u!114 &2074231837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074231834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -37071,82 +37371,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 12
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e76fc7728352171479bac8773467a627, type: 2}
-  m_sharedMaterial: {fileID: -8228563087191886921, guid: e76fc7728352171479bac8773467a627, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4113106438
-  m_fontColor: {r: 0.023529412, g: 0.023529412, b: 0.16078432, a: 0.9607843}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 39.45
-  m_fontSizeBase: 45
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 45
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2072015858
+  m_Sprite: {fileID: -1321237367, guid: 01c59c54887bdd840b30f761495aad41, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2074231838
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072015855}
+  m_GameObject: {fileID: 2074231834}
   m_CullTransparentMesh: 1
 --- !u!1 &2079186140
 GameObject:
@@ -37356,81 +37597,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094142243}
-  m_CullTransparentMesh: 1
---- !u!1 &2098057912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2098057913}
-  - component: {fileID: 2098057915}
-  - component: {fileID: 2098057914}
-  m_Layer: 5
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2098057913
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098057912}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 188, y: 188, z: 188}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1314160346}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 4000, y: 2500}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2098057914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098057912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.7490196, g: 0.6627451, b: 0.43529415, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2098057915
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098057912}
   m_CullTransparentMesh: 1
 --- !u!1 &2099872035
 GameObject:

@@ -23,7 +23,12 @@ public class WaitingForFishState : IMinigameState
     {
         Debug.Log("Enter Waiting For Fish state");
 
-        _manager.rewardFish = _manager.fishingPrepareSystem.SetFishToCatch();
+        _manager.rewardFish = _manager.fishingPrepareSystem.GetFishToCatch(
+            _manager.gameDataSystem.GetAllFishesData(), 
+            _manager.gameDataSystem.GetCurrentBaitData().baitsForce,
+            _manager.gameDataSystem.GetCurrentGameDayTimeInMinuties() / 60,
+            _manager.gameDataSystem.GetPlayerLevel()
+            );
 
         _manager.cat.GetComponent<Animator>().Play("CatAnimationRodShot");
 

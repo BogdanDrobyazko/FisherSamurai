@@ -1,210 +1,112 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-
 
 
 public class FishingPrepareSystem : MonoBehaviour
 {
-    [SerializeField] private GameDataSystem _gameDataSystem;
-    [SerializeField] private List<float> _currentProbabilities; //вероятности выпадения рыб
-    [SerializeField] private List<FishData> _availableFishes; // лист с доступными рыбами
+    //максимальное число забросов через которое обязательно должна выпасть не выловленая раннее рыба
+    private const int MANDATORY_FISH_BORDER = 20;
+    private int _mandatoryFishCounter = 0;
+    
+    [SerializeField] private List<FishData> _caughtFishes;
+    [SerializeField] private List<FishData> _fishesNotCaughtYet;
 
-    [SerializeField] private int _currentHour; //текущий час
-    [SerializeField] private int _updateTime; //время обнавлени
-    private List<FishData> _fishList; //база данных рыб
-
-    private BaitData currentBait;
-
-
-    private void Awake()
+    public FishData GetFishToCatch(List<FishData> fishList, int baitForce, int currentHour,
+        int playerLevel)
     {
-        _fishList = _gameDataSystem.GetAllFishesData();
+        _caughtFishes.Clear();
+        _fishesNotCaughtYet.Clear();    
 
-        //при первом включении меняем доступных рыб
-        _updateTime = 1;
-        _currentHour = _gameDataSystem.GetCurrentGameDayTimeInMinuties() / 60;
-        FindAvailableFishes(_currentHour);
-    }
-
-
-    private void Update()
-    {
-        //задаем текущее игровое время
-        _currentHour = _gameDataSystem.GetCurrentGameDayTimeInMinuties() / 60;
-
-        //если настало время поменять доступных рыб
-        if (IsTimeToUpdateAwailables())
+        foreach (FishData fish in fishList
+                     .Where(fish => fish.catchStartHour <= currentHour && fish.catchEndHour >= currentHour)
+                     .Where(fish => fish.level <= playerLevel))
         {
-            _fishList = _gameDataSystem.GetAllFishesData();
-            //меняем доступных рыб
-            FindAvailableFishes(_currentHour);
-        }
-    }
-
-
-    // метод возвращающий рыбу для ловли
-    public FishData SetFishToCatch()
-    {
-        _fishList = _gameDataSystem.GetAllFishesData();
-
-        //меняем доступных рыб
-        FindAvailableFishes(_currentHour);
-
-        currentBait = _gameDataSystem.GetCurrentBaitData();
-        SetCurrentProbabilitesWithBait(currentBait);
-        //выбираем рандомную рыбу из доступных относительно вероятности
-        int selectedIndex = FishIndexSelection(_currentProbabilities);
-        FishData selectedFish = _availableFishes[selectedIndex];
-
-        //возвращаем выбранную рыбу
-        return selectedFish;
-    }
-
-
-    //метод для нахождения доступных рыб из всех
-    private void FindAvailableFishes(int currentTimeHour)
-    {
-        //очищаем предыдущий лист
-        _availableFishes.Clear();
-
-        // проходим по всем рыбам и если рыба подходит кидаем в лист
-        foreach (FishData fish in _fishList)
-        {
-            if ((fish.catchStartHour <= currentTimeHour) && (fish.catchEndHour >= currentTimeHour))
+            if (fish.isCaught)
             {
-                _availableFishes.Add(fish);
+                _caughtFishes.Add(fish);
             }
-        }
-    }
-
-
-    //метод расчитывающий вероятности выпадения относительно цен звданных рыб
-    private List<float> RecalculateProbabilities()
-    {
-        /* ОПИСАНИЕ АЛГОРИТМА
-        Алгоритм рассчитывает вероятности обратно стоимости рыб т.е. самая дорогая рыба будет самой редкой.
-        Уравнение выглялит так - (1/а[1] + 1/a[2] + ... + 1/a[n]) = x, где a - цена рыбы, n - колличество рыб, 
-        x - сглаживающий коэфициент. Далее вероятность каждой рыбы будет равна - " 1 / (a[i] * x) ", 
-        где i номер рыбы в массиве.*/
-
-        //создаем лист из цен доступных рыб
-        List<float> costs = new List<float>();
-        foreach (FishData fish in _availableFishes)
-        {
-            costs.Add(fish.rewardMoney);
-        }
-
-        //ищем сглаживающий коэффициент
-        float smoothingCoefficient = 0f;
-        for (int i = 0; i < costs.Count; i++)
-        {
-            smoothingCoefficient += 1 / costs[i];
-        }
-
-        //закладываем и возвращаем лист вероятностей
-        for (int i = 0; i < costs.Count; i++)
-        {
-            costs[i] = 1 / (costs[i] * smoothingCoefficient);
-        }
-
-        return costs;
-    }
-
-
-    //метод рандомной выборки индекса с учетом вероятностей
-    private int FishIndexSelection(List<float> probabilities)
-    {
-        /*ОПИСАНИЕ АЛГОРИТМА
-         Так как у каждой рыбы в массиве есть своя вероятность, а сумма этих вероятностей равна 1,
-         то можно представить их как отрезок длиной 1, состоящий из отрезков поменьше.
-         Если задать некое ранодмное число между 0 и 1, то это число попадет в пределы некокго отрезка
-         как раз относительно его длины, т.е. вероятности его выпадения. Для этого мы сначала задаем 
-         это рандомное число а потом последовательно складываем коэффициенты, и когда число будет меньше 
-         суммы, возвращаем коэффициент последней вероятности.*/
-
-        //поле суммы коэффициентов
-        float cumulativeProbability = 0;
-
-        //случайное число
-        float randomValue = Random.Range(0f, 1f);
-
-        //находим нужный коэфициент по алгоритму, и возвращаем его
-        for (int i = 0; i < probabilities.Count; i++)
-        {
-            cumulativeProbability += probabilities[i];
-            if (randomValue <= cumulativeProbability)
+            else
             {
-                return i;
+                _fishesNotCaughtYet.Add(fish);
             }
         }
 
-        return probabilities.Count - 1;
-    }
+        // ReSharper disable once PossibleLossOfFraction
+        bool isRequiredFishPreviouslyCaught = Random.value > 1.1f - (1.0f / baitForce);
 
-
-    //метод проверяющий прошло ли достаточно времени чтобы обновлять доступных рыб
-    private bool IsTimeToUpdateAwailables()
-    {
-        //сравниваем текущее время и время для следуещего обновления
-        int currentTime = _gameDataSystem.GetCurrentGameDayTimeInMinuties() / 60;
-
-        if ((currentTime >= _updateTime && _updateTime != 0) || currentTime == 0)
+        if (!isRequiredFishPreviouslyCaught &&
+            _mandatoryFishCounter > MANDATORY_FISH_BORDER)
         {
-            //если больше, меняем следующее время обновления и возвращаем true
-            ChangeNextUpdateTime();
-
-            return true;
+            _mandatoryFishCounter = 0;
+            isRequiredFishPreviouslyCaught = true;
         }
         else
         {
-            return false;
+            _mandatoryFishCounter += 1;
         }
+
+        if (_caughtFishes.Count == 0 ||
+            _caughtFishes.Count <= _fishesNotCaughtYet.Count)
+        {
+            isRequiredFishPreviouslyCaught = false;
+        }
+        
+        if (_fishesNotCaughtYet.Count == 0)
+        {
+            isRequiredFishPreviouslyCaught = true;
+        }
+
+        FishData requiredFish = new();
+
+        if (isRequiredFishPreviouslyCaught)
+        {
+            requiredFish = SelectRandomFish(_caughtFishes);
+        }
+        else
+        {
+            requiredFish = SelectRandomFish(_fishesNotCaughtYet);
+        }
+
+
+        return requiredFish;
     }
 
 
-    //метод меняющий следующее время обновления доступных рыб
-    private void ChangeNextUpdateTime()
+    private FishData SelectRandomFish(List<FishData> fishes)
     {
-        //все рыбы в нашей базе имеют периоды активности строгов рамках таких временых дат 00:00, 06:00, 12:00, 00:00
+        if (fishes.Count == 0) return new FishData();
+        // Находим максимальную стоимость для нормализации
+        float maxCost = fishes.Max(f => f.rewardMoney);
 
-        //текущее время
-        int currentTime = _gameDataSystem.GetCurrentGameDayTimeInMinuties() / 60;
+        // Инвертируем стоимости и нормализуем их
+        List<float> normalizedProbabilities = fishes.Select(f => maxCost / f.rewardMoney).ToList();
 
-        if (currentTime >= 23)
+        // Считаем сумму всех нормализованных вероятностей
+        float totalProbability = normalizedProbabilities.Sum();
+
+        // Создаем кумулятивное распределение
+        List<float> cumulativeProbabilities = new();
+        float cumulativeSum = 0f;
+        foreach (float probability in normalizedProbabilities)
         {
-            currentTime = -1;
+            cumulativeSum += probability / totalProbability;
+            cumulativeProbabilities.Add(cumulativeSum);
         }
-        //назначаем следующее время для обновления
 
-        _updateTime = currentTime + 1;
-    }
+        // Генерируем случайное число от 0 до 1
+        float randomValue = Random.value;
 
-    //метод возвращающий заданные вероятности вылова в зависимости от наживки
-
-    private void SetCurrentProbabilitesWithBait(BaitData bait)
-    {
-        switch (bait.potential)
+        // Выбираем рыбу на основе случайного числа и кумулятивного распределения
+        for (int i = 0; i < cumulativeProbabilities.Count; i++)
         {
-            case 0:
-                _currentProbabilities = new List<float>()
-                    {0.8182636f, 0.1636527f, 0.01636527f, 0.001636527f, 0.00008182637f};
-                break;
-            case 1:
-                _currentProbabilities = new List<float>()
-                    {0.01636527f, 0.8182636f, 0.1636527f, 0.001636527f, 0.00008182637f};
-                break;
-            case 2:
-                _currentProbabilities = new List<float>()
-                    {0.001636527f, 0.1636527f, 0.8182636f, 0.01636527f, 0.00008182637f};
-                break;
-            case 3:
-                _currentProbabilities = new List<float>()
-                    {0.001636527f, 0.01636527f, 0.1636527f, 0.8182636f, 0.00008182637f};
-                break;
-            case 4:
-                _currentProbabilities = new List<float>()
-                    {0.00008182637f, 0.001636527f, 0.01636527f, 0.1636527f, 0.8182636f};
-                break;
+            if (randomValue <= cumulativeProbabilities[i])
+            {
+                return fishes[i];
+            }
         }
+
+        // На всякий случай, если что-то пошло не так, возвращаем последнюю рыбу
+        return fishes[^1];
     }
 }
