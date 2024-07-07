@@ -1,14 +1,12 @@
-using System;
-using System.Collections.Generic;
+ 
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
+ 
 
 namespace MinigameBehaviorSystem
 {
-    public class References : MonoBehaviour
+    public class MinigameReferences : MonoBehaviour
     {
         [Header("Environment")] 
         public GameObject cat;

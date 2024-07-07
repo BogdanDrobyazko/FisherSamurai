@@ -19,7 +19,7 @@ public class FPSCounter : MonoBehaviour
         // Вычисляем FPS
         float _fps = 1.0f / _deltaTime;
         
-        delayTime += Time.deltaTime;
+        delayTime += Time.unscaledDeltaTime;
 
         if (_fpsShowDelayTime <= delayTime)
         {

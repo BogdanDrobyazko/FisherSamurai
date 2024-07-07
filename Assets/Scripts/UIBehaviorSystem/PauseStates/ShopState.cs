@@ -11,10 +11,10 @@ public class ShopState : IPauseState
 
     NumberFormatInfo _frmt = new NumberFormatInfo {NumberGroupSeparator = " ", NumberDecimalDigits = 0};
     private List<HookData> _hooksList;
-    private PauseBehaviorManager _manager;
+    private PauseStateMachine _manager;
     private List<RodData> _rodsList;
 
-    public void SetManager(PauseBehaviorManager manager)
+    public void SetManager(PauseStateMachine manager)
     {
         _manager = manager;
     }

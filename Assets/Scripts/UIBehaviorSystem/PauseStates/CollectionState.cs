@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public class CollectionState : IPauseState
 {
-    private PauseBehaviorManager _manager;
+    private PauseStateMachine _manager;
     private FishData _selectedFish;
 
-    public void SetManager(PauseBehaviorManager manager)
+    public void SetManager(PauseStateMachine manager)
     {
         _manager = manager;
     }

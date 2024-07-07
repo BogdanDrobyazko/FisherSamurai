@@ -12,11 +12,13 @@ namespace UIBehaviorSystem
         [SerializeField] private TextMeshProUGUI _levelText;
         [SerializeField] private List<int> _expThresholds;
         [SerializeField] private int _debugExp;
+        [SerializeField] private TextMeshProUGUI _newLevelEntryText;
         private int _currentLevel;
         
-        private void Awake()
+        private void Start()
         {
             _eventBus.GetComponent<IReadOnlyEventBus>().OnExpChanged.AddListener(UpdateExp);
+            NewLevelEntryTextClose();
         }
 
         [EditorButton("Update Exp")]
@@ -53,7 +55,14 @@ namespace UIBehaviorSystem
             {
                 _currentLevel = operationLevel;
                 _eventBus.GetComponent<EventBus>().OnLevelChanged.Invoke(_currentLevel);
+                
+                _newLevelEntryText.enabled = true;
+                Invoke(nameof(NewLevelEntryTextClose), 5f);
+                
             }
         }
+
+        private void NewLevelEntryTextClose() =>
+            _newLevelEntryText.enabled = false;
     }
 }
