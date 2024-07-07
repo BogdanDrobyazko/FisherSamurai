@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine.Serialization;
 
 
 [Serializable]
@@ -12,7 +13,7 @@ public class BaitData : IItemData
     public bool isItemEquipped;
     public int baitsCount;
     public bool isItemMultiplable;
-    public int typeOfFishToImprovement;
+    [FormerlySerializedAs("typeOfFishToImprovement")] public int baitsForce;
 
 
     public int id
@@ -54,7 +55,7 @@ public class BaitData : IItemData
 
     public int potential
     {
-        get => typeOfFishToImprovement;
+        get => baitsForce;
     }
 
     public int itemCount

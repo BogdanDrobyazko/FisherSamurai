@@ -3,29 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Kilosoft.Tools;
+using UnityEngine.Events;
 
 
 public class GameDataSystem : MonoBehaviour
 {
-
     [SerializeField] private EventBus _eventBus;
-    
+    private readonly SaveDataSystem _saveDataSystem = new SaveDataSystem();
+
     [SerializeField] private GameData _currentGameData;
     [SerializeField] private GameData _baseGameData;
     [SerializeField] private List<Sprite> _fishSprites;
- 
+
     [SerializeField] private List<Sprite> _rodsSprites;
     [SerializeField] private List<Sprite> _hooksSprites;
     [SerializeField] private GameObject _enviromentRod;
     [SerializeField] private GameObject _enviromentHook;
     [SerializeField] private int _maxFrameRate = 60;
-    private readonly SaveDataSystem _saveDataSystem = new SaveDataSystem();
 
     private float realSecondsLast;
 
     public void Awake()
     {
-      
         Application.targetFrameRate = _maxFrameRate;
         if (_currentGameData.fishDatas == null)
             ChangeCurrentGameDataWithBase();
@@ -37,8 +36,9 @@ public class GameDataSystem : MonoBehaviour
         }
 
         RefreshRenderedItems();
-    }
 
+        _eventBus.GetComponent<IReadOnlyEventBus>().OnLevelChanged.AddListener(OnLevelChanged);
+    }
 
     private void Update()
     {
@@ -67,14 +67,14 @@ public class GameDataSystem : MonoBehaviour
     {
         foreach (var fish in _currentGameData.fishDatas)
         {
-            fish.isCathed = true;
+            fish.isCaught = true;
         }
 
         foreach (var hook in _currentGameData.hookDatas)
         {
             hook.isBuyed = true;
         }
-        
+
         foreach (var rod in _currentGameData.rodDatas)
         {
             rod.isBuyed = true;
@@ -85,8 +85,9 @@ public class GameDataSystem : MonoBehaviour
             bait.isBuyed = true;
             bait.itemCount = 10;
         }
-        
+
         IncreaseMoney(999999999);
+        IncreaseExp(999999999);
         SaveGameData();
     }
 
@@ -124,6 +125,7 @@ public class GameDataSystem : MonoBehaviour
         Application.targetFrameRate = _maxFrameRate;
     }
 
+
     public void ClearGameData()
     {
         ChangeCurrentGameDataWithBase();
@@ -139,6 +141,7 @@ public class GameDataSystem : MonoBehaviour
         _eventBus.TriggerMoneyBalanceChanged(GetMoneyBalance());
     }
 
+
     public int GetMoneyBalance() => _currentGameData.moneyBalance;
 
     public void DecreaseMoney(int operationMoney)
@@ -150,12 +153,10 @@ public class GameDataSystem : MonoBehaviour
             operationMoney > currentMoneyAmount)
         {
             throw new Exception("Ошибка: operationMoney не может быть меньше нуля!");
-             
         }
 
         _currentGameData.moneyBalance = targetMoneyAmount;
         _eventBus.TriggerMoneyBalanceChanged(targetMoneyAmount);
-
     }
 
     public void IncreaseMoney(int operationMoney)
@@ -170,18 +171,45 @@ public class GameDataSystem : MonoBehaviour
 
         _currentGameData.moneyBalance = targetMoneyAmount;
         _eventBus.TriggerMoneyBalanceChanged(targetMoneyAmount);
-
     }
+
+    public void IncreaseExp(int operationExp)
+    {
+        int currentExp = _currentGameData.exp;
+        int targetExp = currentExp + operationExp;
+
+        if (targetExp > _currentGameData.maxExp)
+        {
+            targetExp =  _currentGameData.maxExp;
+        }
+
+        _currentGameData.exp = targetExp;
+        _eventBus.TriggerExpChanged(targetExp);
+    }
+
+
+    public int GetCurrentExp() => _currentGameData.exp;
+    public int GetCurrentMaxExp() => _currentGameData.maxExp;
+    public int GetPlayerLevel() => _currentGameData.playerLevel;
 
     public int GetCurrentGameDayTimeInMinuties() => _currentGameData.gameDayTimeInMinutes;
     public FishData GetFishFromAll(int index) => _currentGameData.fishDatas[index];
     public Sprite GetFishSpriteFromAll(int index) => _fishSprites[index];
     public List<FishData> GetAllFishesData() => _currentGameData.fishDatas;
 
+    /// <summary>
+    /// Returns the count of all fishes in the current game data.
+    /// </summary>
+    /// <returns>The number of fishes in the current game data.</returns>
     public int GetAllFishesCount()
     {
         return _currentGameData.fishDatas.Count;
     }
+
+
+    public bool IsFishAvailable(int fishID) => GetPlayerLevel() >= _currentGameData.fishDatas[fishID].level ;
+
+    public bool IsFishCaught(int fishID) => _currentGameData.fishDatas[fishID].isCaught;
 
     public void RefreshFishRecord(int fishID, char newBestRank, int newBesPrice)
     {
@@ -191,8 +219,9 @@ public class GameDataSystem : MonoBehaviour
         if (_currentGameData.fishDatas[fishID].recordReward < newBesPrice)
             _currentGameData.fishDatas[fishID].recordReward = newBesPrice;
 
-        _currentGameData.fishDatas[fishID].isCathed = true;
+        _currentGameData.fishDatas[fishID].isCaught = true;
     }
+
 
     public List<RodData> GetAllRodsData() => _currentGameData.rodDatas;
     public List<BaitData> GetAllBaitsData() => _currentGameData.baitDatas;
@@ -311,4 +340,6 @@ public class GameDataSystem : MonoBehaviour
     {
         _currentGameData.currentRodIndex = index;
     }
+
+    private void OnLevelChanged(int newLevel) => _currentGameData.playerLevel = newLevel;
 }

@@ -11,8 +11,8 @@ namespace CameraSystem
         [SerializeField] private float _currentAspectRatio;
         [SerializeField] private CanvasScaler[] _canvasScalers;
 
-        [Header("Плавное увеличение UI при переходе через границу разрешения экрана")] [SerializeField]
-        private float _switchScaleModeBorder = 0.65f;
+        [Header("Плавное увеличение UI при переходе через границу разрешения экрана")] 
+        [SerializeField] private float _switchScaleModeBorder = 0.65f;
 
         [SerializeField] private float _containSizeStart = 0.8f;
         [SerializeField] private float _containSizeEnd = 0.8f;
@@ -21,13 +21,13 @@ namespace CameraSystem
         [SerializeField] private float _lastAspectRatio;
         private float _t = 0.0f;
 
-        private bool _transionDone = false;
+        private bool _transitionDone = false;
         private float _transitionTimer = 0.0f;
 
         private void Update()
         {
             _currentAspectRatio = (float) Screen.width / Screen.height;
-            if ((Math.Abs(_currentAspectRatio - _lastAspectRatio) > 0.01f) && !_transionDone)
+            if ((Math.Abs(_currentAspectRatio - _lastAspectRatio) > 0.01f) && !_transitionDone)
             {
                 _lastAspectRatio = _currentAspectRatio;
                 UpdatePauseFieldCanvasScaler();
@@ -48,7 +48,7 @@ namespace CameraSystem
                     
                     if (_t < 1)
                     {
-                        _transionDone = false;
+                        _transitionDone = false;
                         _transitionTimer += Time.deltaTime;
                         _t = Mathf.Clamp01(_transitionTimer / _lerpTime);
                         float currentValue = Mathf.Lerp(_containSizeStart, _containSizeEnd, _t);
@@ -57,7 +57,7 @@ namespace CameraSystem
                     else
                     {
                         _t = 0;
-                        _transionDone = true;
+                        _transitionDone = true;
                     }
 
                 }

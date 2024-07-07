@@ -1,5 +1,6 @@
 ﻿using System;
- 
+using UnityEngine.Serialization;
+
 
 [Serializable]
 public class FishData // класс содержащий информацию о каждой рыбе
@@ -8,10 +9,11 @@ public class FishData // класс содержащий информацию о
     public string title; // название 
     public string description; // описание 
     public int rewardMoney; // максимальная награда за поимку
+    public int rewardExp; // максимальное количество опыта за поимку 
     public int level; //уровень с которого можно поимать рыбу
     public int catchStartHour; // первый час ловли
     public int catchEndHour; // последний час ловли
-    public bool isCathed; //была ли рыба поймана
+    public bool isCaught; //была ли рыба поймана
     public char bestRank; // лучший ранк пойманой рыбы
     public int recordReward; //самая большая цена рыбы
 }
