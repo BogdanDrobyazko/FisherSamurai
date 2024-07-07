@@ -10,10 +10,10 @@ public class CollectionButtons : MonoBehaviour
 
     // массив спрайтов рыб
     [SerializeField] private Sprite _notAvailableFishSprite;
-    [FormerlySerializedAs("fishSprites")] [SerializeField] private List<Sprite> _fishSprites;
-    [FormerlySerializedAs("fishSpritesShadowed")] [SerializeField] private List<Sprite> _fishSpritesShadowed;
-    [FormerlySerializedAs("framesSprites")] [SerializeField] private List<Sprite> _framesSprites;
-    [FormerlySerializedAs("fishesData")] [SerializeField] private List<FishData> _fishesData;
+    [SerializeField] private List<Sprite> _fishSprites;
+    [SerializeField] private List<Sprite> _fishSpritesShadowed;
+    [SerializeField] private List<Sprite> _framesSprites;
+    [SerializeField] private List<FishData> _fishesData;
     [Range(0f, 1f)] [SerializeField] private float _interectableButtonAlfa;
     [Range(0f, 1f)] [SerializeField] private float _noninterectableButtonAlfa;
     [Range(0f, 150f)] [SerializeField] private float _sizeOfFishImage;
