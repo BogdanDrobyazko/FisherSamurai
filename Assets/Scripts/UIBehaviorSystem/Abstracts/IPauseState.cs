@@ -1,7 +1,7 @@
 ﻿
 public interface IPauseState
 {
-    void SetManager(PauseBehaviorManager manager);
+    void SetManager(PauseStateMachine manager);
     void StateEnter();
     void StateUpdate();
     void StateExit();

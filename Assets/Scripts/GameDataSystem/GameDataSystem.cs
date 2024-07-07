@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Kilosoft.Tools;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 
 public class GameDataSystem : MonoBehaviour
@@ -25,19 +26,17 @@ public class GameDataSystem : MonoBehaviour
 
     public void Awake()
     {
+        Debug.Log(name + " awake");
+        _eventBus.GetComponent<IReadOnlyEventBus>().OnLevelChanged.AddListener(OnLevelChanged);
+        
         Application.targetFrameRate = _maxFrameRate;
-        if (_currentGameData.fishDatas == null)
-            ChangeCurrentGameDataWithBase();
-
-
+        
         if (_currentGameData.fishDatas != null)
         {
             FishData fish = _currentGameData.fishDatas[0];
         }
 
         RefreshRenderedItems();
-
-        _eventBus.GetComponent<IReadOnlyEventBus>().OnLevelChanged.AddListener(OnLevelChanged);
     }
 
     private void Update()
@@ -130,7 +129,7 @@ public class GameDataSystem : MonoBehaviour
     {
         ChangeCurrentGameDataWithBase();
         SaveGameData();
-        LoadGameData();
+        SceneManager.LoadScene("BootScene");
     }
 
     public void ChangeCurrentGameDataWithBase()
@@ -138,7 +137,7 @@ public class GameDataSystem : MonoBehaviour
         _currentGameData = _baseGameData;
         SaveGameData();
         RefreshRenderedItems();
-        _eventBus.TriggerMoneyBalanceChanged(GetMoneyBalance());
+        _eventBus.TriggerMoneyBalanceChanged(0);
     }
 
 

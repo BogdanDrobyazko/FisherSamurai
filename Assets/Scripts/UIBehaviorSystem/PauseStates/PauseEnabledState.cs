@@ -2,9 +2,9 @@
 
 public class PauseEnabledState : IPauseState
 {
-    private PauseBehaviorManager _manager;
+    private PauseStateMachine _manager;
 
-    public void SetManager(PauseBehaviorManager manager)
+    public void SetManager(PauseStateMachine manager)
     {
         _manager = manager;
     }

@@ -49,7 +49,7 @@ public class SaveDataSystem
         if (!File.Exists(filePath))
         {
             SaveInJson(gameData, fileName);
-            Debug.Log("File not found");
+            Debug.Log("Cannot load "  + fileName + ". Creating new one");
         }
 
         string json = File.ReadAllText(filePath);

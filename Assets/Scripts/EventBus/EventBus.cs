@@ -5,6 +5,12 @@ using UnityEngine.Events;
 
 public class EventBus : MonoBehaviour, IReadOnlyEventBus
 {
+    private void Awake()
+    {
+        Debug.Log(name + " awake");
+    }
+
+    
     public UnityEvent<FishData> OnFishCatched { get; } = new();
     
     public void TriggerFishCatched(FishData catchedFish)
@@ -17,6 +23,7 @@ public class EventBus : MonoBehaviour, IReadOnlyEventBus
     public void TriggerMoneyBalanceChanged(int newAmount)
     {
         OnMoneyBalanceChanged?.Invoke(newAmount);
+        Debug.Log(name + ": Money balance changed to " + newAmount);
     }
 
     public UnityEvent<int> OnExpChanged { get; } = new();

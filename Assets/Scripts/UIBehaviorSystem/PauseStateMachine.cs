@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 
-public class PauseBehaviorManager : MonoBehaviour
+public class PauseStateMachine : MonoBehaviour
 {
     [SerializeField] private EventBus _eventBus;
     
@@ -184,7 +184,7 @@ public class PauseBehaviorManager : MonoBehaviour
         this._currentState = newState;
         this._currentState.SetManager(this);
         this._currentState.StateEnter();
-        moneyBalanceTextRenderer.UpdateBalanceText(gameDataSystem.GetMoneyBalance());
+        _eventBus.TriggerMoneyBalanceChanged(gameDataSystem.GetMoneyBalance());
     }
 
     private void SetDefaultState()

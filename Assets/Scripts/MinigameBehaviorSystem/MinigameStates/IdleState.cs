@@ -40,12 +40,6 @@ public class IdleState :  IMinigameState
 
         for (int i = 0; i < 3; i++)
         {
-            if (_gameDataSystem.GetAllBaitsData() == null)
-            {
-                _gameDataSystem.ChangeCurrentGameDataWithBase();
-                ;
-            }
-
             if (_gameDataSystem.GetAllBaitsData()[i].isEquipped)
             {
                 _gameDataSystem.ChangeCurrentBaitTypeIndex(i);
